@@ -5,19 +5,20 @@
 // Generated on: 2014.05.28 at 04:27:51 ÏÂÎç CST 
 //
 
-
-package org.liujinhang.paper.ifc.Pset.entity;
+package org.liujinhang.paper.ifcPset.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for DataType complex type.
+ * <p>
+ * Java class for DataType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="DataType">
@@ -143,35 +144,32 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "DataType")
 public class DataType {
 
-    @XmlAttribute
-    protected String type;
+	@XmlAttribute
+	protected String type;
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getType() {
-        if (type == null) {
-            return "IfcText";
-        } else {
-            return type;
-        }
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getType() {
+		if (type == null) {
+			return "IfcText";
+		} else {
+			return type;
+		}
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setType(String value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setType(String value) {
+		this.type = value;
+	}
 
 }

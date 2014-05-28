@@ -5,8 +5,7 @@
 // Generated on: 2014.05.28 at 04:27:51 ÏÂÎç CST 
 //
 
-
-package org.liujinhang.paper.ifc.Pset.entity;
+package org.liujinhang.paper.ifcPset.entity;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -14,11 +13,13 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Java class for UnitType complex type.
+ * <p>
+ * Java class for UnitType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * The following schema fragment specifies the expected content contained within
+ * this class.
  * 
  * <pre>
  * &lt;complexType name="UnitType">
@@ -122,66 +123,60 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "UnitType")
 public class UnitType {
 
-    @XmlAttribute
-    protected String type;
-    @XmlAttribute
-    @XmlSchemaType(name = "anySimpleType")
-    protected String currencytype;
+	@XmlAttribute
+	protected String type;
+	@XmlAttribute
+	@XmlSchemaType(name = "anySimpleType")
+	protected String currencytype;
 
-    /**
-     * Gets the value of the type property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getType() {
-        if (type == null) {
-            return "USERDEFINED";
-        } else {
-            return type;
-        }
-    }
+	/**
+	 * Gets the value of the type property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getType() {
+		if (type == null) {
+			return "USERDEFINED";
+		} else {
+			return type;
+		}
+	}
 
-    /**
-     * Sets the value of the type property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setType(String value) {
-        this.type = value;
-    }
+	/**
+	 * Sets the value of the type property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setType(String value) {
+		this.type = value;
+	}
 
-    /**
-     * Gets the value of the currencytype property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCurrencytype() {
-        if (currencytype == null) {
-            return "USERDEFINED";
-        } else {
-            return currencytype;
-        }
-    }
+	/**
+	 * Gets the value of the currencytype property.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getCurrencytype() {
+		if (currencytype == null) {
+			return "USERDEFINED";
+		} else {
+			return currencytype;
+		}
+	}
 
-    /**
-     * Sets the value of the currencytype property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCurrencytype(String value) {
-        this.currencytype = value;
-    }
+	/**
+	 * Sets the value of the currencytype property.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setCurrencytype(String value) {
+		this.currencytype = value;
+	}
 
 }
