@@ -11,7 +11,7 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
-			<!-- FIXED -->
+			<!-- MODIFIED -->
 			<xs:all>
 				<xs:element name="IfcVersion">
 					<xs:annotation>
@@ -135,7 +135,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<!-- FIXED -->
+				<!-- MODIFIED -->
 			</xs:all>
 			<xs:attribute name="ifdguid" type="xs:string">
 				<xs:annotation>
@@ -285,7 +285,8 @@
 		<xs:annotation>
 			<xs:documentation>The element of property type.</xs:documentation>
 		</xs:annotation>
-		<xs:choice>
+		<!-- MODIFIED -->
+		<xs:choice minOccurs="0">
 			<xs:element name="TypePropertySingleValue">
 				<xs:annotation>
 					<xs:documentation>The element of IfcPropertySingleValue.

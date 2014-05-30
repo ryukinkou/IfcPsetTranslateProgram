@@ -1,57 +1,42 @@
 package org.liujinhang.paper.ifcPset.module;
 
-import java.io.File;
-import java.net.URL;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
-import javax.xml.XMLConstants;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.parsers.SAXParserFactory;
-import javax.xml.transform.Source;
-import javax.xml.transform.sax.SAXSource;
-import javax.xml.validation.SchemaFactory;
-
-import org.liujinhang.paper.ifcPset.entity.PropertySetDef;
-import org.liujinhang.paper.ifcPset.system.Constant;
+import org.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
+import org.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingThread;
 import org.liujinhang.paper.ifcPset.system.GobalContext;
-import org.xml.sax.InputSource;
-import org.xml.sax.XMLReader;
 
 public class PsetDefinitionReader {
 
+	private ExecutorService threadPool;
+
+	public PsetDefinitionReader() {
+		threadPool = Executors.newFixedThreadPool(10);
+	}
+
+	@SuppressWarnings("unchecked")
 	public void read() {
 
 		try {
 
-			JAXBContext context = JAXBContext.newInstance(PropertySetDef.class);
-			Unmarshaller shaller = context.createUnmarshaller();
-			shaller.setSchema(SchemaFactory.newInstance(
-					XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(
-					new File(Constant.PSET_DEFINITION_FILE_PATH)));
+			for (String guid : GobalContext.PsetGuid) {
 
-			SAXParserFactory sax = SAXParserFactory.newInstance();
-			sax.setNamespaceAware(false);
-			XMLReader xmlReader = sax.newSAXParser().getXMLReader();
+				IFCPsetDefinitionPullingThread thread = new IFCPsetDefinitionPullingThread();
 
-			for (String pSetFileUrl : GobalContext.PsetFileLocation) {
+				thread.setGuid(guid);
 
-				System.out.println(pSetFileUrl);
-				
-				Source source = new SAXSource(xmlReader, new InputSource(
-						new URL(pSetFileUrl).openStream()));
-
-				JAXBElement<PropertySetDef> root = shaller.unmarshal(source,
-						PropertySetDef.class);
-
-				// TEST
-				PropertySetDef def = root.getValue();
-
-				System.out.println(def.getName());
+				Future<IFCPsetDefinitionPullingResult> future = threadPool
+						.submit(thread);
+				GobalContext.IFCPsetDefinitionPullingResults.add(future);
 			}
 
+			this.threadPool.shutdown();
+
 		} catch (Exception e) {
-			e.printStackTrace();
+
 		}
+
 	}
 }

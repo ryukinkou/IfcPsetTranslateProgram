@@ -2,14 +2,17 @@ package org.liujinhang.paper.ifcPset;
 
 import org.liujinhang.paper.ifcPset.module.PsetDefinitionPuller;
 import org.liujinhang.paper.ifcPset.module.PsetDefinitionReader;
+import org.liujinhang.paper.ifcPset.module.PsetDefinitionWriter;
 
 public class IfcPsetLetsDoThis {
 
 	public static void main(String[] args) {
 
-		new PsetDefinitionPuller().pull();
+		new PsetDefinitionPuller().pullFromIFDLibrary();
 
 		new PsetDefinitionReader().read();
+
+		new PsetDefinitionWriter().write();
 
 	}
 }

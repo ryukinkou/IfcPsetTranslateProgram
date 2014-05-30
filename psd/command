@@ -1,1 +1,1 @@
-xjc -d /Users/RYU/git/IfcPsetTranslateProgram/src -p org.liujinhang.paper.ifc.Pset.entity -xmlschema http://www.buildingsmart-tech.org/xml/psd/PSD_IFC4.xsd
+xjc -d /Users/RYU/git/IfcPsetTranslateProgram/src -p org.liujinhang.paper.ifcPset.entity -xmlschema http://www.buildingsmart-tech.org/xml/psd/PSD_IFC4.xsd

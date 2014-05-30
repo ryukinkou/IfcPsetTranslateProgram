@@ -9,14 +9,16 @@ import org.htmlparser.Parser;
 import org.htmlparser.filters.AndFilter;
 import org.htmlparser.filters.HasAttributeFilter;
 import org.htmlparser.filters.TagNameFilter;
+import org.htmlparser.tags.Div;
 import org.htmlparser.tags.LinkTag;
+import org.htmlparser.tags.TableRow;
 import org.htmlparser.util.NodeList;
 import org.liujinhang.paper.ifcPset.system.Constant;
 import org.liujinhang.paper.ifcPset.system.GobalContext;
 
 public class PsetDefinitionPuller {
 
-	public void pull() {
+	public void pullFromIFCDocument() {
 
 		try {
 
@@ -42,6 +44,51 @@ public class PsetDefinitionPuller {
 							&& link.indexOf(".xml") != -1) {
 
 						GobalContext.PsetFileLocation.add(link);
+
+					}
+
+				}
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void pullFromIFDLibrary() {
+
+		try {
+
+			URL sourcePage = new URL(Constant.PSET_BROWSE_VIEW_URL);
+
+			Parser parser = new Parser(
+					(HttpURLConnection) (sourcePage.openConnection()));
+
+			NodeFilter filter = new AndFilter(new TagNameFilter("tr"),
+					new HasAttributeFilter("data-guid"));
+			NodeList list = parser.extractAllNodesThatMatch(filter);
+
+			for (int i = 0; i < list.size(); i++) {
+
+				Node node = list.elementAt(i);
+
+				if (node instanceof TableRow) {
+
+					TableRow trPset = (TableRow) node;
+
+					if (trPset.getParent().getParent().getParent().getParent() instanceof Div) {
+
+						Div divPset = (Div) trPset.getParent().getParent()
+								.getParent();
+
+						if (divPset.getAttribute("id").equals("collapseFour")) {
+
+							GobalContext.PsetGuid.add(trPset
+									.getAttribute("data-guid"));
+
+						}
 
 					}
 

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="ThirdParty/jaxb/jaxb-api.jar" sourcepath="ThirdParty/jaxb/jaxb-api-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/IfcPsetTranslateProgram/ThirdParty/jaxb/jaxb-api-doc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="ThirdParty/jaxb/jaxb-core.jar" sourcepath="ThirdParty/jaxb/jaxb-core.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/IfcPsetTranslateProgram/ThirdParty/jaxb/jaxb-core-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="ThirdParty/jaxb/jaxb-impl.jar" sourcepath="ThirdParty/jaxb/jaxb-impl.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/IfcPsetTranslateProgram/ThirdParty/jaxb/jaxb-impl-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="ThirdParty/jaxb/jaxb-jxc.jar" sourcepath="ThirdParty/jaxb/jaxb-jxc.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/IfcPsetTranslateProgram/ThirdParty/jaxb/jaxb-jxc-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="ThirdParty/jaxb/jaxb-xjc.jar" sourcepath="ThirdParty/jaxb/jaxb-xjc.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/IfcPsetTranslateProgram/ThirdParty/jaxb/jaxb-xjc-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="ThirdParty/HTMLParser/filterbuilder.jar"/>
 	<classpathentry kind="lib" path="ThirdParty/HTMLParser/htmllexer.jar"/>
