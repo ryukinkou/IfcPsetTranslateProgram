@@ -4,7 +4,7 @@ import org.liujinhang.paper.ifcPset.module.PsetDefinitionPuller;
 import org.liujinhang.paper.ifcPset.module.PsetDefinitionReader;
 import org.liujinhang.paper.ifcPset.module.PsetDefinitionWriter;
 
-public class IfcPsetLetsDoThis {
+public class LetsDoThis {
 
 	public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class IfcPsetLetsDoThis {
 
 		new PsetDefinitionReader().read();
 
-		new PsetDefinitionWriter().write();
+		new PsetDefinitionWriter().lanuch();
 
 	}
 }

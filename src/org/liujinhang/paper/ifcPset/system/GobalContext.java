@@ -6,7 +6,13 @@ import java.util.concurrent.Future;
 
 import org.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
 
+import com.hp.hpl.jena.ontology.OntModel;
+
 public class GobalContext {
+	
+	public static OntModel IFCOntology;
+	
+	public static String IFCOntologyNamespace;
 
 	public static List<String> PsetFileLocation = new ArrayList<String>();
 
