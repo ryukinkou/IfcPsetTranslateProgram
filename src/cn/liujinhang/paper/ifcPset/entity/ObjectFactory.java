@@ -6,7 +6,7 @@
 //
 
 
-package org.liujinhang.paper.ifcPset.entity;
+package cn.liujinhang.paper.ifcPset.entity;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;

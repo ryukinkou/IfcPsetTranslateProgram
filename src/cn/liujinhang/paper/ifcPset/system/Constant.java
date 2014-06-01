@@ -1,4 +1,4 @@
-package org.liujinhang.paper.ifcPset.system;
+package cn.liujinhang.paper.ifcPset.system;
 
 public class Constant {
 	

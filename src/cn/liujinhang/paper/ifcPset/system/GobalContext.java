@@ -1,10 +1,10 @@
-package org.liujinhang.paper.ifcPset.system;
+package cn.liujinhang.paper.ifcPset.system;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 
-import org.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
+import cn.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
 
 import com.hp.hpl.jena.ontology.OntModel;
 

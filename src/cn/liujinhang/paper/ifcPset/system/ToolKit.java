@@ -1,8 +1,8 @@
-package org.liujinhang.paper.ifcPset.system;
+package cn.liujinhang.paper.ifcPset.system;
 
 public class ToolKit {
 
-	public static String getLocalFullName(String localName) {
+	public static String getFullName(String localName) {
 
 		if (GobalContext.IFCOntologyNamespace.endsWith("#")) {
 			return GobalContext.IFCOntologyNamespace + localName;
@@ -14,7 +14,7 @@ public class ToolKit {
 
 	public static String getDatatypePredicate(String localName) {
 
-		return ToolKit.getLocalFullName(localName);
+		return ToolKit.getFullName(localName);
 
 	}
 

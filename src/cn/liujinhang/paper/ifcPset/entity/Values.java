@@ -6,7 +6,7 @@
 //
 
 
-package org.liujinhang.paper.ifcPset.entity;
+package cn.liujinhang.paper.ifcPset.entity;
 
 import java.util.ArrayList;
 import java.util.List;

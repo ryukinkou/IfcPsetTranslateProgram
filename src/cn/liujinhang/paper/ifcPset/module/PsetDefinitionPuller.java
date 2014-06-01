@@ -1,4 +1,4 @@
-package org.liujinhang.paper.ifcPset.module;
+package cn.liujinhang.paper.ifcPset.module;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -13,8 +13,9 @@ import org.htmlparser.tags.Div;
 import org.htmlparser.tags.LinkTag;
 import org.htmlparser.tags.TableRow;
 import org.htmlparser.util.NodeList;
-import org.liujinhang.paper.ifcPset.system.Constant;
-import org.liujinhang.paper.ifcPset.system.GobalContext;
+
+import cn.liujinhang.paper.ifcPset.system.Constant;
+import cn.liujinhang.paper.ifcPset.system.GobalContext;
 
 public class PsetDefinitionPuller {
 

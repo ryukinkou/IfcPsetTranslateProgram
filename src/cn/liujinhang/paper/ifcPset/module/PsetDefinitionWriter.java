@@ -1,4 +1,4 @@
-package org.liujinhang.paper.ifcPset.module;
+package cn.liujinhang.paper.ifcPset.module;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,16 +8,16 @@ import java.util.concurrent.Future;
 
 import javax.xml.bind.JAXBElement;
 
-import org.liujinhang.paper.ifcPset.entity.PropertyDef;
-import org.liujinhang.paper.ifcPset.entity.PropertyDef.DefinitionAliases.DefinitionAlias;
-import org.liujinhang.paper.ifcPset.entity.PropertyDef.NameAliases.NameAlias;
-import org.liujinhang.paper.ifcPset.entity.PropertySetDef;
-import org.liujinhang.paper.ifcPset.entity.PropertyType;
-import org.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
-import org.liujinhang.paper.ifcPset.system.Constant;
-import org.liujinhang.paper.ifcPset.system.CustomAnnotationProperty;
-import org.liujinhang.paper.ifcPset.system.GobalContext;
-import org.liujinhang.paper.ifcPset.system.ToolKit;
+import cn.liujinhang.paper.ifcPset.entity.PropertyDef;
+import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
+import cn.liujinhang.paper.ifcPset.entity.PropertyType;
+import cn.liujinhang.paper.ifcPset.entity.PropertyDef.DefinitionAliases.DefinitionAlias;
+import cn.liujinhang.paper.ifcPset.entity.PropertyDef.NameAliases.NameAlias;
+import cn.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
+import cn.liujinhang.paper.ifcPset.system.Constant;
+import cn.liujinhang.paper.ifcPset.system.CustomAnnotationProperty;
+import cn.liujinhang.paper.ifcPset.system.GobalContext;
+import cn.liujinhang.paper.ifcPset.system.ToolKit;
 
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.ontology.AllValuesFromRestriction;
@@ -32,10 +32,8 @@ public class PsetDefinitionWriter {
 	public PsetDefinitionWriter() {
 		GobalContext.IFCOntology = ModelFactory.createOntologyModel();
 		GobalContext.IFCOntology.read(Constant.INPUT_IFC_OWL_FILE_PATH);
-
 		GobalContext.IFCOntologyNamespace = GobalContext.IFCOntology
 				.getNsPrefixMap().get("base");
-
 	}
 
 	public void lanuch() {
@@ -98,22 +96,21 @@ public class PsetDefinitionWriter {
 
 	public void write(PropertySetDef pSetDef) {
 
-		OntClass pSetClazz = GobalContext.IFCOntology
-				.createClass(GobalContext.IFCOntologyNamespace + "#"
-						+ pSetDef.getName());
-		
-		
+		OntClass pSetClazz = GobalContext.IFCOntology.createClass(ToolKit
+				.getFullName(pSetDef.getName()));
+
 		pSetClazz.addLiteral(CustomAnnotationProperty.GUID,
-							GobalContext.IFCOntology.createLiteral(
-									pSetDef.getIfdguid(),
-									"en"));
-		
-		pSetClazz.setLabel(pSetDef.getName(), pSetDef.getIfcVersion().getVersion());
-		
+				GobalContext.IFCOntology.createLiteral(pSetDef.getIfdguid(),
+						"en"));
+
+		pSetClazz.setLabel(pSetDef.getName(), "ifc "
+				+ pSetDef.getIfcVersion().getVersion());
+
 		System.out.println("-----------------------------------------");
 		System.out.println(pSetDef.getApplicableTypeValue());
 		System.out.println(pSetDef.getApplicability());
-		System.out.println(pSetDef.getApplicableClasses().toString());
+		System.out.println(pSetDef.getApplicableClasses().getClassName()
+				.toString());
 		System.out.println("-----------------------------------------");
 
 		for (PropertyDef propertyDef : pSetDef.getPropertyDefs()
@@ -173,7 +170,7 @@ public class PsetDefinitionWriter {
 								.getObjectPredicate(propertyName));
 
 				type = GobalContext.IFCOntology.createClass(ToolKit
-						.getLocalFullName(propertyType));
+						.getFullName(propertyType));
 
 			} else {
 
@@ -215,10 +212,6 @@ public class PsetDefinitionWriter {
 					property, type);
 
 			pSetClazz.addSuperClass(avf);
-
-			System.out
-					.println(propertyName + " -> " + propertyType != null ? propertyType
-							: "string");
 
 		}
 

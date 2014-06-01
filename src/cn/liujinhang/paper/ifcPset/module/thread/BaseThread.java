@@ -1,4 +1,4 @@
-package org.liujinhang.paper.ifcPset.module.thread;
+package cn.liujinhang.paper.ifcPset.module.thread;
 
 import java.io.BufferedReader;
 import java.io.IOException;

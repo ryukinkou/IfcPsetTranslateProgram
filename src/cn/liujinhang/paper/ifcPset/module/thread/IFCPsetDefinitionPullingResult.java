@@ -1,6 +1,6 @@
-package org.liujinhang.paper.ifcPset.module.thread;
+package cn.liujinhang.paper.ifcPset.module.thread;
 
-import org.liujinhang.paper.ifcPset.entity.PropertySetDef;
+import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
 
 public class IFCPsetDefinitionPullingResult {
 

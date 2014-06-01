@@ -1,4 +1,4 @@
-package org.liujinhang.paper.ifcPset.module.thread;
+package cn.liujinhang.paper.ifcPset.module.thread;
 
 import java.io.File;
 import java.io.InputStreamReader;
@@ -13,10 +13,11 @@ import javax.xml.transform.Source;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.validation.SchemaFactory;
 
-import org.liujinhang.paper.ifcPset.entity.PropertySetDef;
-import org.liujinhang.paper.ifcPset.system.Constant;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
+
+import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
+import cn.liujinhang.paper.ifcPset.system.Constant;
 
 public class IFCPsetDefinitionPullingThread extends BaseThread {
 
