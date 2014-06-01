@@ -1,6 +1,8 @@
 package org.liujinhang.paper.ifcPset.system;
 
 public class Constant {
+	
+	public static final String PREDICATE_PERFIX = "has";
 
 	public static final String BSDD_BASE_URL = "http://bsdd.catenda.com/api/4.0";
 
