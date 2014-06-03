@@ -1,7 +1,7 @@
 package cn.liujinhang.paper.ifcPset.system;
 
 public class Constant {
-	
+
 	public static final String PREDICATE_PERFIX = "has";
 
 	public static final String BSDD_BASE_URL = "http://bsdd.catenda.com/api/4.0";
@@ -12,9 +12,9 @@ public class Constant {
 
 	public static final String PSET_BROWSE_VIEW_URL = "http://bsdd.catenda.com/templates/BrowseView.html";
 
-	public static final String INPUT_IFC_OWL_FILE_PATH = "/Users/RYU/git/IfcTranslateProgram/ifc/ifcOWL_stage1.owl";
+	public static final String INPUT_IFC_OWL_FILE_PATH = "/Users/RYU/git/IfcPsetDefinitionTranslateProgram/psd/ifcOWL_phase_2.owl";
 
 	public static final String OUTPUT_IFC_OWL_FILE_PATH = System
-			.getProperty("user.dir") + "/ifcPset/ifcOWL_stage2.owl";	
+			.getProperty("user.dir") + "/ifcPset/ifcOWL_phase_3.owl";
 
 }

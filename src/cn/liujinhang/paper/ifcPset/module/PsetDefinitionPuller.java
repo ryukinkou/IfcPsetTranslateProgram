@@ -1,5 +1,8 @@
 package cn.liujinhang.paper.ifcPset.module;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -24,7 +27,6 @@ public class PsetDefinitionPuller {
 		try {
 
 			URL indexPage = new URL(Constant.PSET_FILE_DIR_URL);
-
 			Parser parser = new Parser(
 					(HttpURLConnection) (indexPage.openConnection()));
 
@@ -62,10 +64,26 @@ public class PsetDefinitionPuller {
 
 		try {
 
-			URL sourcePage = new URL(Constant.PSET_BROWSE_VIEW_URL);
+			// URL sourcePage = new URL(Constant.PSET_BROWSE_VIEW_URL);
+			//
+			// Parser parser = new Parser(
+			// (HttpURLConnection) (sourcePage.openConnection()));
 
-			Parser parser = new Parser(
-					(HttpURLConnection) (sourcePage.openConnection()));
+			// load file from local start
+			StringBuffer content = new StringBuffer();
+			BufferedReader reader = new BufferedReader(
+					new FileReader(
+							new File(
+									"/Users/RYU/git/IfcPsetTranslateProgram/ifcPset/BrowseView.html")));
+			String strLine = "";
+			while ((strLine = reader.readLine()) != null) {
+				content.append(strLine);
+				content.append("\r\n");
+			}
+			reader.close();
+
+			Parser parser = Parser.createParser(content.toString(), "UTF-8");
+			// load file from local end
 
 			NodeFilter filter = new AndFilter(new TagNameFilter("tr"),
 					new HasAttributeFilter("data-guid"));
