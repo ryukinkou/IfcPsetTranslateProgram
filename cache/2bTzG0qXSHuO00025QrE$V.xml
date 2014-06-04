@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2bTzG0qXSHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_WasteTerminalTypeGullyTrap</Name>
+	<Definition>Pipe fitting or assembly of fittings to receive surface water or waste water, fitted with a grating or sealed cover and discharging through a trap (BS6100 330 3504 modified)</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcWasteTerminal/GULLYTRAP</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">表面水や廃水を受けるために取り付けられる、取付器具や配管(BS6100 330 3504)グレーチングや防臭弁を通して排出されるよう取り付けられる。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0XSXm0qXWHuO00025QrE$V">
+			<Name>CoverWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">カバーの幅</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">局所座標系のY軸で測定された溝防臭弁カバーの長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2_W8K0qXSHuO00025QrE$V">
+			<Name>NominalBodyDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">呼称躯体深さ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">溝防臭弁の半径か局所座標系のZ軸に沿って測定された呼称もしくは積算された長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0P6U40qXWHuO00025QrE$V">
+			<Name>CoverLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">カバーの長さ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">局所座標系のX軸に沿うか、半径（円状の形の場合）で測定された溝防臭弁カバーの長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="382Uq0qXSHuO00025QrE$V">
+			<Name>GullyType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">防臭弁の種類</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">設置する予定の溝をあらかじめ定義でタイプを確認します。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3iPSc0qXSHuO00025QrE$V">
+			<Name>OutletConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">排気口接続口サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素からの接続口サイズ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2grHw0qXSHuO00025QrE$V">
+			<Name>NominalBodyLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">呼称躯体長</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">溝防臭弁の半径か局所座標系のＸ軸に沿って測定された呼称もしくは積算された長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3qlWI0qXSHuO00025QrE$V">
+			<Name>BackInletPatternType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0GAG_0qXWHuO00025QrE$V">
+			<Name>InletConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">吸気口接続口サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">吸気口接続口のサイズ。
+
+注意：同サイズの吸気接続口がないものとします。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2qNeQ0qXSHuO00025QrE$V">
+			<Name>NominalBodyWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">呼称躯体幅</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">溝防臭弁の半径か局所座標系のＹ軸に沿って測定された呼称もしくは積算された長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3TVnS0qXSHuO00025QrE$V">
+			<Name>TrapType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">防臭弁の種類</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">セットされる予定の防臭弁のあらかじめ定義されたタイプを確認します。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3LltA0qXSHuO00025QrE$V">
+			<Name>HasStrainer</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">ろ過装置</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">溝の防臭弁がろ過装置を備えているかどうかの指示。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

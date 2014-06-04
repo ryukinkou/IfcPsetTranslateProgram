@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3ckhI0qXGHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ValveTypeFlushing</Name>
+	<Definition>Valve that flushes a predetermined quantity of water to cleanse a WC, urinal or slop hopper.
+Note that a flushing valve is constrained to have a 2 port  pattern.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcValve/FLUSHING</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">弁タイプフラッシュ</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3i5$y0qXGHuO00025QrE$V">
+			<Name>FlushingRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">フラッシュ率</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">予め決められた流される水量</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3o3U00qXGHuO00025QrE$V">
+			<Name>HasIntegralShutOffDevice</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">全体閉止装置がついているかどうか</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">フラッシュ弁に全体閉止装置がついているかどうかの表示（付きTRUE）又は（無しFALSE）</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3ud5U0qXGHuO00025QrE$V">
+			<Name>IsHighPressure</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">高圧給水の有無</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">フラッシュ弁の高圧給水主管への使用が適当かどうかの表示（適 TRUE）又は（不適 FALSE）</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

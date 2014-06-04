@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1o84_0qUqHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_MaterialMechanical</Name>
+	<Definition>A set of mechanical material properties normally used for structural analysis purpose. It contains all properties which are independent of the actual material type.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcMaterial</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="25Cn_0qUqHuO00025QrE$V">
+			<Name>PoissonRatio</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2BAG20qUqHuO00025QrE$V">
+			<Name>ThermalExpansionCoefficient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1sJ6q0qUqHuO00025QrE$V">
+			<Name>DynamicViscosity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1x4I40qUqHuO00025QrE$V">
+			<Name>YoungModulus</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="20Rck0qUqHuO00025QrE$V">
+			<Name>ShearModulus</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

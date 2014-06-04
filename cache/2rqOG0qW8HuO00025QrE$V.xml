@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2rqOG0qW8HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_SanitaryTerminalTypeSanitaryFountain</Name>
+	<Definition>Asanitary terminal that provides a low pressure jet of water for a specific purpose (IAI). HISTORY: In IFC2x4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value).</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcSanitaryTerminal/SANITARYFOUNTAIN</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">特定の使用用途の水を低圧で供給する衛生機器
+背景：IFC2x4で、要素のプロパティーは排除されています。IfcMaterialsResourceのタイプを使ってください。
+色のデータ形式は文字列としてIfcLabelに変更されています。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3uarm0qW8HuO00025QrE$V">
+			<Name>DrainSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">下水管サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素から排水溝への下水管サイズ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3VYgi0qW8HuO00025QrE$V">
+			<Name>NominalWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">幅</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素の幅。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="37ioS0qW8HuO00025QrE$V">
+			<Name>Mounting</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">設置</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">設置場所の選択：
+
+・床置き壁排出：接続口の後部に出水口を合わせること。
+・台：床置きの衛生器具には基礎があること。
+・調理台：衛生器具の表層が水平に設置されていること。※手洗い台として設置された場合「化粧台」として扱うこと。また、洗面台種類の規格表を参照のこと。
+・壁掛け型：衛生器具は片側固定がされ床から離れていること。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3NCd00qW8HuO00025QrE$V">
+			<Name>NominalLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長さ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素の長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3eUto0qW8HuO00025QrE$V">
+			<Name>NominalDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">深さ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素の深さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2xBiw0qW8HuO00025QrE$V">
+			<Name>FountainType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">噴水タイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">噴水タイプの選択：
+
+・飲用水：飲用水を低圧で供給するための衛生器具
+・洗眼器：廃水器具で、通常は個体の粒子か危険な液体による眼への障害の危険がある作業場所に設置され、使用者はそれらに触れずに目を洗うことができる。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3mqxU0qW8HuO00025QrE$V">
+			<Name>Color</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">色</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素の色。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

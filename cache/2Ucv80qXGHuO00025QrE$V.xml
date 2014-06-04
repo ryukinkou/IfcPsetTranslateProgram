@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2Ucv80qXGHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ValveTypeFaucet</Name>
+	<Definition>A small diameter valve, with a free outlet, from which water is drawn.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcValve/FAUCET</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">弁タイプ水栓</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2Z_Do0qXGHuO00025QrE$V">
+			<Name>FaucetType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">水栓タイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">水栓タイプの範囲をここに明確に定義する
+Bib = 入口が水平で、下に吐出するノズルの水栓　Globe =浴槽の端に付けられ、入口が水平で、本体が部分的に球形で、ノズルが垂直な水栓　Diverter =シャワーヘッドへの混合水の流れを変えられる弁を持った組合せ水栓　DividedFlowCombination = 共通のノズルから出るまで水と湯が分かれたままになっている組合せ水栓　Pillar =垂直な入口と下へ吐出するノズルを持った水栓　SingleOutletCombination =共通のノズルから出る前に水と湯が混合する組合せ水栓　Spray =スプレー状の吐出口を持った水栓　SprayMixing =使用中決められた温度で供給する給水と給湯に接続されたスプレー水栓</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2t2wo0qXGHuO00025QrE$V">
+			<Name>FaucetOperation</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">水栓操作</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">水栓の操作方法の範囲をここで明確に定義する：
+CeramicDisc = 口を開閉するセラミックシールを持った急操作水栓　LeverHandle = レバーハンドルで操作される急操作水栓　SelfClosing =サージ圧をもたらさない自閉水栓　QuarterTurn =90度、操作機構を回すことで全開又は全閉できる急操作水栓　QuickAction =操作機構の一つの小さな動きで全開又は全閉できる水栓　ScrewDown =口を開閉するためにねじの主軸を回して中の板又は円板を動かす水栓　SelfClosing = 操作主軸の頂部の圧力で開けられ、圧力が開放された時は、ばね又は錘の動作で閉められる水栓　TimedSelfClosing =前もって決められた時間、吐出する自閉水栓</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3QDbm0qXGHuO00025QrE$V">
+			<Name>Finish</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">仕上げ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">水栓に適用される仕上げの説明</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3WB3q0qXGHuO00025QrE$V">
+			<Name>FaucetTopDescription</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">水栓の頂部</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">操作機構/水栓の頂部の説明</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Bw400qXGHuO00025QrE$V">
+			<Name>FaucetFunction</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">水栓機能</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">水栓の作動温度を明確に定義する。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

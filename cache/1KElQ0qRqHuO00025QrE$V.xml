@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1KElQ0qRqHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ActuatorTypeElectricActuator</Name>
+	<Definition>A device that electrically actuates a control element.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcActuator/ELECTRICACTUATOR</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">制御要素を電気的に作動させるデバイス。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1UzOk0qRqHuO00025QrE$V">
+			<Name>ElectricActuatorType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電気式アクチュエータタイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">作動原理によって定義された電気式アクチュエータを識別する一覧。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1O$wg0qRqHuO00025QrE$V">
+			<Name>ActuatorInputPower</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">入力電力</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">最大入力電力。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

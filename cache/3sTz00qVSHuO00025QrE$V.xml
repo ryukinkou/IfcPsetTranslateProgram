@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3sTz00qVSHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProjectOrderWorkOrder</Name>
+	<Definition>Defines the requirements for purchase orders in a project.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcProjectOrder/WORKORDER</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3_DtI0qVSHuO00025QrE$V">
+			<Name>ProductDescription</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0FW840qVWHuO00025QrE$V">
+			<Name>ContractualType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="07A4O0qVWHuO00025QrE$V">
+			<Name>WorkTypeRequested</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0OSLA0qVWHuO00025QrE$V">
+			<Name>IfNotAccomplished</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

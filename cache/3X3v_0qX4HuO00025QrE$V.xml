@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3X3v_0qX4HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_TransportElementCommon</Name>
+	<Definition>Properties common to the definition of all occurrences of IfcTransportElement or IfcTransportElementType</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcTransportElement</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="de-DE">Property Set Definition in German</PsetDefinitionAlias>
+		<PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : propriétés communes à la définition de toutes les instances de la classe IfcTransportElement</PsetDefinitionAlias>
+		<PsetDefinitionAlias lang="ja-JP">交通要素共通事項。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0Caee0qX8HuO00025QrE$V">
+			<Name>FireExit</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Rettungsweg</NameAlias>
+				<NameAlias lang="fr-FR">SortieSecours</NameAlias>
+				<NameAlias lang="ja-JP">避難出口</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Angabe ob dieses Transportelement als Rettungsweg im Brandfall zulässig ist (WAHR) oder nicht (FALSCH).</DefinitionAlias>
+				<DefinitionAlias lang="fr-FR">Indication si l'objet est conçu pour servir de sortie en cas d'incendie (VRAI) ou non (FAUX). Cas d'un élément de transport comme un ascenseur conçu pour l'évacuation en cas d'incendie.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">避難出口(TRUE)か、通常の出口(FALSE)かを示すフラグ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="003Z60qX8HuO00025QrE$V">
+			<Name>CapacityPeople</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Personenkapazität</NameAlias>
+				<NameAlias lang="ja-JP">搭乗人数定員</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Kapazität nach Anzahl der Personen, die maximal befördert werden können.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">搬送要素の人数に関する容量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3fPzg0qX4HuO00025QrE$V">
+			<Name>Reference</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Komponententyp</NameAlias>
+				<NameAlias lang="fr-FR">Reference</NameAlias>
+				<NameAlias lang="ja-JP">参照記号</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Bezeichnung zur Zusammenfassung gleichartiger Komponenten zu einem Komponententyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterstützt.</DefinitionAlias>
+				<DefinitionAlias lang="fr-FR">Référence à l'identifiant d'un type spécifié dans le contexte de ce projet (exemple : "type A1"). A fournir s'il n'y a pas de référence à une classification en usage.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">参照するID番号。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3lzb80qX4HuO00025QrE$V">
+			<Name>Status</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Status</NameAlias>
+				<NameAlias lang="ja-JP">状態</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Ergänzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Temporär" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="05Qtm0qX8HuO00025QrE$V">
+			<Name>CapacityWeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Lastkapazität</NameAlias>
+				<NameAlias lang="ja-JP">搭載重量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Kapazität nach Gewicht, das maximal befördert werden kann.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">搬送要素の重さに関する容量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

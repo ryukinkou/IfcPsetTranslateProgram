@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="38r5m0qU8HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_EvaporatorPHistory</Name>
+	<Definition>Evaporator performance history attributes.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcEvaporator</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">蒸発器性能履歴属性</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3HB9S0qU8HuO00025QrE$V">
+			<Name>ExteriorHeatTransferCoefficient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">外表面熱交換係数</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">外表面に関連づけられた外表面熱交換係数</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Ox3k0qU8HuO00025QrE$V">
+			<Name>RefrigerantFoulingResistance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3UuXo0qU8HuO00025QrE$V">
+			<Name>LogarithmicMeanTemperatureDifference</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">対数平均温度差</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">冷媒と水または空気の対数平均温度差</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3uWsG0qU8HuO00025QrE$V">
+			<Name>EvaporatorMeanVoidFraction</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">蒸発器平均空隙率</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">蒸発器の平均の空隙率</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Km1u0qU8HuO00025QrE$V">
+			<Name>InteriorHeatTransferCoefficient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">内面熱交換係数</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">内面に関連づけられた内面熱交換係数</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3ECQQ0qU8HuO00025QrE$V">
+			<Name>HeatRejectionRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">排熱量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">冷凍効果と圧縮機への電源入力の相当熱量の合計</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3y5ki0qU8HuO00025QrE$V">
+			<Name>WaterFoulingResistance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">水側汚れ抵抗</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">水／空気面の汚れ抵抗</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3k_Vm0qU8HuO00025QrE$V">
+			<Name>CompressorEvaporatorHeatGain</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">圧縮機・蒸発器熱取得</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">蒸発器出口と圧縮機入口間の熱取得</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3XtGq0qU8HuO00025QrE$V">
+			<Name>UAcurves</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">UA曲線</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">UV=ｆ（V外面、V内面）、UVは、入り口での内面・外面流体速度の関数</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3plh00qU8HuO00025QrE$V">
+			<Name>CompressorEvaporatorPressureDrop</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">圧縮機・蒸発器圧力降下</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">蒸発器出口と圧縮機入口間の圧力降下</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Rvom0qU8HuO00025QrE$V">
+			<Name>EvaporatingTemperature</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">蒸発温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">蒸発温度</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

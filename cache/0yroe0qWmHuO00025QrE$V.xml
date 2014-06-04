@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0yroe0qWmHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_SpaceThermalRequirements</Name>
+	<Definition>Properties related to the comfort requirements for thermal and other  thermal related performance properties of spaces that apply to the occurrences of IfcSpace, IfcSpatialZone or IfcZone. It can also be used to capture requirements for IfcSpaceType's. This includes the required design temperature, humidity, ventilation, and air conditioning.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName> IfcSpatialZone</ClassName>
+		<ClassName>IfcSpace</ClassName>
+		<ClassName> IfcZone</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue>IfcSpace, IfcSpatialZone, IfcZone</ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="de-DE">Property Set Definition in German</PsetDefinitionAlias>
+		<PsetDefinitionAlias lang="ja-JP">室の快適な温熱環境に関連する要求性能。IfcSpace, IfcZoneに適用される。
+温度、湿度、空調についての設計上の設定を含む。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="18mkm0qWmHuO00025QrE$V">
+			<Name>SpaceTemperatureMax</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur Maximal</NameAlias>
+				<NameAlias lang="ja-JP">最高室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Maximale geforderte Raumtemperatur, die nicht überschritten werden darf, gilt als ganzjährige Anforderung unabhängig vom Heizungs-, oder Kühlungsfall.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの最高温度。利用者/設計者の視点から要求される。もし夏季または冬季の室内温度要求が与えられないと、それは通年に、さもなければ中間季に適用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1hxPk0qWmHuO00025QrE$V">
+			<Name>SpaceHumidity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Luftfeuchtigkeit</NameAlias>
+				<NameAlias lang="ja-JP">室内湿度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Geforderte Luftfeuchtigkeit für diesen Raum, gilt als ganzjährige Anforderung unabhängig vom Heizungs-, oder Kühlungsfall. Es wird angegeben, wenn kein geforderter Luftfeuchtigkeitsbereich (Min - Max)  vorhanden ist.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの湿度。利用者/設計者の視点から要求される。もし夏季または冬季の室内湿度要求が与えられないと、それは通年に、さもなければ中間季に適用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1W0Tc0qWmHuO00025QrE$V">
+			<Name>SpaceTemperatureWinterMax</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur Heizung Maximal</NameAlias>
+				<NameAlias lang="ja-JP">冬季最高室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Maximal geforderte Raumtemperatur für die Auslegung der Raumheizung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの寒冷季(冬季)の最高温度。利用者/設計者の視点から要求される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1EkCq0qWmHuO00025QrE$V">
+			<Name>SpaceTemperatureMin</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur Minimal</NameAlias>
+				<NameAlias lang="ja-JP">最低室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Minimale geforderte Raumtemperatur, die nicht unterschritten werden darf, gilt als ganzjährige Anforderung unabhängig vom Heizungs-, oder Kühlungsfall.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの最低温度。利用者/設計者の視点から要求される。もし夏季または冬季の室内温度要求が与えられないと、それは通年に、さもなければ中間季に適用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Q2$Y0qWmHuO00025QrE$V">
+			<Name>SpaceTemperatureSummerMin</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur Kühlung Minimal</NameAlias>
+				<NameAlias lang="ja-JP">夏季最低室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Minimal geforderte Raumtemperatur aus dem Raumprogramm für die Auslegung der Raumkühlung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの暑熱季(夏季)の最低温度。利用者/設計者の視点から要求される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1K5XU0qWmHuO00025QrE$V">
+			<Name>SpaceTemperatureSummerMax</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur Kühlung Maximal</NameAlias>
+				<NameAlias lang="ja-JP">夏季最高室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Maximal geforderte Raumtemperatur aus dem Raumprogramm für die Auslegung der Raumkühlung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの暑熱季(夏季)の最高温度。利用者/設計者の視点から要求される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2DJeU0qWmHuO00025QrE$V">
+			<Name>NaturalVentilation</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Natürliche Lüftung</NameAlias>
+				<NameAlias lang="ja-JP">自然換気</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Anforderung, ob der Raum eine natürliche Lüftung haben soll (WAHR), oder eine künstliche Lüftung (Falsch).</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間が自然換気を持つか機械換気を持つかを示すブーリアン値。(TRUE)有、(FALSE)なし。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2VoC40qWmHuO00025QrE$V">
+			<Name>AirConditioning</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Klimaanlage</NameAlias>
+				<NameAlias lang="ja-JP">空調</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Anforderung, ob der Raum mit einer Klimaanlage ausgestattet werden soll (WAHR), oder nicht (Falsch).</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">この空間が空調を要求するかどうかを示すブーリアン値。(TRUE)要、(FALSE)不要。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2blg80qWmHuO00025QrE$V">
+			<Name>AirConditioningCentral</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Klimaanlage zentral</NameAlias>
+				<NameAlias lang="ja-JP">中央式空調</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Anforderung, ob die Klimaanlage zentral gesteuert werden soll (WAHR), oder nicht (FALSCH). Soll nur angegeben werden, wenn die Eigenschaft "Klimaanlage" mit WAHR gegeben ist.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間が中央式空調を要求するかどうかを示すブーリアン値。「空調」プロパティがTRUEに設定された場合のみ、与えられる。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="26m100qWmHuO00025QrE$V">
+			<Name>DiscontinuedHeating</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Diskontinuierliche Heizung</NameAlias>
+				<NameAlias lang="ja-JP">不連続暖房</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Anfoderung, ob der Raum durch eine diskontinuierliche Heizung versorgt werden soll (WAHR) oder nicht (FALSCH).</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">不連続暖房が利用者/設計者の視点から要求/要望されるかどうかを示すブーリアン値。(TRUE)要、(FALSE)不要。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2KTPM0qWmHuO00025QrE$V">
+			<Name>NaturalVentilationRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Natürliche Luftwechselzahl</NameAlias>
+				<NameAlias lang="ja-JP">自然換気率</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Geforderte Luftwechselzahl (in Wechsel per Stunde) im Fall der natürlichen Lüftung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">特定の自然換気率の要求指標。1時間あたりの換気回数で与えられる。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1y1Ni0qWmHuO00025QrE$V">
+			<Name>SpaceHumiditySummer</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Luftfeuchtigkeit Kühlung</NameAlias>
+				<NameAlias lang="ja-JP">夏季室内湿度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Geforderte Luftfeuchtigkeit für diesen Raum für die Auslegung der Kühlung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの暑熱季(夏季)の室内湿度。利用者/設計者の視点から要求される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="12pGi0qWmHuO00025QrE$V">
+			<Name>SpaceTemperature</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur</NameAlias>
+				<NameAlias lang="ja-JP">最高室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Geforderte Raumtemperatur, die nicht überschritten werden darf, gilt als ganzjährige Anforderung unabhängig vom Heizungs-, oder Kühlungsfall. Diese wird angegeben, wenn kein geforderter Temperaturbereich (Min - Max) vorhanden ist.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの温度。利用者/設計者の視点から要求される。もし夏季または冬季の室内温度要求が与えられないと、それは通年に、さもなければ中間季に適用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2QQtQ0qWmHuO00025QrE$V">
+			<Name>MechanicalVentilationRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Künstliche Luftwechselzahl</NameAlias>
+				<NameAlias lang="ja-JP">機械換気率</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Geforderte Luftwechselzahl (in Wechsel per Stunde) im Fall der künstlichen Lüftung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">特定の機械換気率の要求指標。1時間あたりの換気回数で与えられる。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1mia_0qWmHuO00025QrE$V">
+			<Name>SpaceHumidityMax</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Luftfeuchtigkeit Maximal</NameAlias>
+				<NameAlias lang="ja-JP">最高室内湿度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Maximal geforderte Luftfeuchtigkeit für diesen Raum, gilt als ganzjährige Anforderung unabhängig vom Heizungs-, oder Kühlungsfall.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの最高湿度。利用者/設計者の視点から要求される。もし夏季または冬季の室内湿度要求が与えられないと、それは通年に、さもなければ中間季に適用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="21OiM0qWmHuO00025QrE$V">
+			<Name>SpaceHumidityWinter</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Luftfeuchtigkeit Heizung</NameAlias>
+				<NameAlias lang="ja-JP">冬季室内湿度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Geforderte Luftfeuchtigkeit für diesen Raum für die Auslegung der Heizung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの寒冷季(冬季)の室内湿度。利用者/設計者の視点から要求される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1bzxg0qWmHuO00025QrE$V">
+			<Name>SpaceTemperatureWinterMin</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtemperatur Heizung Minimal</NameAlias>
+				<NameAlias lang="ja-JP">冬季最低室内温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Minimal geforderte Raumtemperatur für die Auslegung der Raumheizung.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの寒冷季(冬季)の最低温度。利用者/設計者の視点から要求される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1sg320qWmHuO00025QrE$V">
+			<Name>SpaceHumidityMin</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Luftfeuchtigkeit Minimal</NameAlias>
+				<NameAlias lang="ja-JP">最低室内湿度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Minimal geforderte Luftfeuchtigkeit für diesen Raum, gilt als ganzjährige Anforderung unabhängig vom Heizungs-, oder Kühlungsfall.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">空間またはゾーンの最低湿度。利用者/設計者の視点から要求される。もし夏季または冬季の室内湿度要求が与えられないと、それは通年に、さもなければ中間季に適用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

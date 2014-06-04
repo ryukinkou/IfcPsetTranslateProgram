@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3YVA00qV0HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_MechanicalFastenerBolt</Name>
+	<Definition>Properties related to bolt-type fasteners. The properties of a whole set with bolt, washers and nut may be provided. Note, it is usually not necessary to transmit these properties in case of standardized bolts. Instead, the standard is referred to.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcMechanicalFastener/BOLT</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3qNaC0qV0HuO00025QrE$V">
+			<Name>NutsCount</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3$6DW0qV0HuO00025QrE$V">
+			<Name>HeadShape</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3dsUg0qV0HuO00025QrE$V">
+			<Name>ThreadDiameter</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="05fq_0qV4HuO00025QrE$V">
+			<Name>KeyShape</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3wL2G0qV0HuO00025QrE$V">
+			<Name>WashersCount</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3kQ680qV0HuO00025QrE$V">
+			<Name>ThreadLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0TVjE0qV4HuO00025QrE$V">
+			<Name>WasherShape</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0BdJ20qV4HuO00025QrE$V">
+			<Name>NutShape</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

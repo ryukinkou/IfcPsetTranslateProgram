@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="14nAa0qSyHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_CoolingTowerPHistory</Name>
+	<Definition>Cooling tower performance history attributes.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcCoolingTower</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1Gi6i0qSyHuO00025QrE$V">
+			<Name>SumpHeaterPower</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Akee0qSyHuO00025QrE$V">
+			<Name>Capacity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1DjNg0qSyHuO00025QrE$V">
+			<Name>HeatTransferCoefficient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1KG$80qSyHuO00025QrE$V">
+			<Name>UACurve</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Nrta0qSyHuO00025QrE$V">
+			<Name>Performance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

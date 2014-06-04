@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1wkrg0qTeHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_DistributionSystemTypeElectrical</Name>
+	<Definition>Properties of electrical circuits.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcDistributionSystem/ELECTRICAL</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">電気回路の関連属性。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2V5pS0qTeHuO00025QrE$V">
+			<Name>Diversity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">負荷率</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">ある期間中同じ回路にある複数電気設備の同時最大負荷と各設備の合計負荷の比率。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2j$Uc0qTeHuO00025QrE$V">
+			<Name>NetImpedance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">ネットインピーダンス</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">電気回路での最大接地インピーダンス（一般はZsで表示）。55℃ (130°F)での数値。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2fEJM0qTeHuO00025QrE$V">
+			<Name>MaximumAllowedVoltageDrop</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">最大許容電圧降下</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">電気回路での電圧降下は最大電圧降下を超えないように。二種類の電圧降下限度があり、一つは分岐－主回路、もう一つは各分電盤或いは末端回路の電気需要装置と接続電気盤である。総電圧下降を使用範囲以内に制限する。デフォルト値は分岐－主回路1.5％、末端回路2.5％、合計総電圧4％である。
+注：この値はIFCモデルでの制約値と指定されているが、現段階ではプロプティセットに設定する。将来的には必要な性能として各ソフトアプリケションに利用する。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1kC$kDKsr14hhEEn_eyHK8">
+			<Name>NumberOfLiveConductors</Name>
+			<PropertyType>
+				<TypePropertySingleValue>
+					<DataType type="IfcInteger"/>
+				</TypePropertySingleValue>
+			</PropertyType>
+			<Definition>Number of live conductors within this circuit. Either this property or the ConductorFunction property (if only one) may be asserted.</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="206AK0qTeHuO00025QrE$V">
+			<Name>ElectricalSystemType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電気システム方式</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">IEC60364電気基準に定義した電気接地の方式。電気設備の種類、接地電極と設備の導電性部分の種類で決められる。具体的なには、IEC60364に下記のような方法がある：
+
+
+- TNシステム：電気設備は一点或いは多点の接地点を持ち、直接接地されるシステム。設備と接地極の導電性部分は保護されていること。
+- TN　Cシステム：系統の全てにわたって、中性線と保護導体が一つの導体のTNシステム。
+- TN　Sシステム：系統の全てにわたって、独立の中性線と保護導体を有するTNシステム。
+- TN　C　Sシステム：系統の一部では、中性線と保護導体が一つの導体のTNシステム。
+- TTシステム：一点を大地に直接接続し、電力系統の接地とは無関係に、設備の露出導電性部分を大地に直接接地すること。
+- ITシステム：電力システムを大地(接地)から絶縁する、設備の露出導電性部分を大地に直接接地すること。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2GoHi0qTeHuO00025QrE$V">
+			<Name>ElectricalSystemCategory</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電気システムのカテゴリー</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">IECに準拠した回路の電圧レンジを示す。次の列挙型の値を取る。(HIGHVOLTAGE indicates >1000V AC or >1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates <50V AC or <120V DC.)</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

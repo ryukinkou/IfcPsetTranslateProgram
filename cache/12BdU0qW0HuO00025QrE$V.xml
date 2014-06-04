@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="12BdU0qW0HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ReinforcementBarPitchOfSlab</Name>
+	<Definition>The pitch length information of reinforcement  bar with the slab.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcSlab</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">スラブの鉄筋間隔に関する情報。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1rSGQ0qW0HuO00025QrE$V">
+			<Name>ShortInsideCenterTopBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">短辺・柱列帯・上端中央ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">短辺方向・柱間帯・上端中央の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1zoK60qW0HuO00025QrE$V">
+			<Name>ShortInsideEndTopBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">短辺・柱列帯・上端端部ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">短辺方向・柱間帯・上端端部の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1LGKU0qW0HuO00025QrE$V">
+			<Name>LongOutsideTopBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長辺・柱列帯・上端ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">長辺方向・柱列帯・上端の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2SnzE0qW0HuO00025QrE$V">
+			<Name>ShortOutsideLowerBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">短辺・柱列帯・下端ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">短辺方向・柱列帯・下端の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2DuI40qW0HuO00025QrE$V">
+			<Name>LongInsideCenterLowerBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長辺・柱列帯・下端中央ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">長辺方向・柱間帯・下端中央の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1byRs0qW0HuO00025QrE$V">
+			<Name>LongInsideEndTopBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長辺・柱列帯・上端端部ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">長辺方向・柱間帯・上端端部の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2b80w0qW0HuO00025QrE$V">
+			<Name>ShortInsideCenterLowerBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">短辺・柱列帯・下端中央ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">短辺方向・柱間帯・下端中央の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2itxC0qW0HuO00025QrE$V">
+			<Name>ShortInsideEndLowerBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">短辺・柱列帯・下端端部ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">短辺方向・柱間帯・下端端部の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Eij00qW0HuO00025QrE$V">
+			<Name>Reference</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">参照記号</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">一般的な鉄筋タイプの説明ラベル。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2LeCM0qW0HuO00025QrE$V">
+			<Name>LongInsideEndLowerBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長辺・柱列帯・下端端部ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">長辺方向・柱間帯・下端端部の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="25YEO0qW0HuO00025QrE$V">
+			<Name>LongOutsideLowerBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長辺・柱列帯・下端ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">長辺方向・柱列帯・下端の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1kIVY0qW0HuO00025QrE$V">
+			<Name>ShortOutsideTopBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">短辺・柱列帯・上端ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">短辺方向・柱列帯・上端の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1895Y0qW0HuO00025QrE$V">
+			<Name>Description</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">説明</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">鉄筋の説明。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1TcOA0qW0HuO00025QrE$V">
+			<Name>LongInsideCenterTopBarPitch</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">長辺・柱列帯・上端中央ピッチ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">長辺方向・柱間帯・上端中央の鉄筋間隔。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

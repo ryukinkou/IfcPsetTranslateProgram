@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2hgeW0qVWHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProtectiveDeviceBreakerUnitI2TCurve</Name>
+	<Definition>A coherent set of attributes representing a curve for let-through energy of a protective device. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcProtectiveDevice</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">保護装置の通電エネルギーの曲線を表す一連のプロパティセット。
+注記-保護装置は、根本的な特性に関連付けられた提供されたプロパティの情報は、　異なる実態に関連しているかもしれません。　　　　　　　　　　　　　　　　　</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3PZyo0qVWHuO00025QrE$V">
+			<Name>BreakerUnitCurve</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">遮断機曲線</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">適用された電流と通過する遮断機のエネルギーを示した曲線
+ （1）定義値：ProspectiveCurrent（固有電流）：
+   電流/I2tで示される最小2から最大8のリストで電流[A]を定義します。
+   カーブが連続する2つの点を結ぶ直線として描かれています。
+
+
+ （2）定義値：LetThroughEnergy：
+   電流/I2tで示される最小2から最大8のリストで通過エネルギー電流[[A2s]を定義します。
+   カーブが連続する2つの点を結ぶ直線として描かれています。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2sPHq0qVWHuO00025QrE$V">
+			<Name>VoltageLevel</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電圧レベル</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">保護装置が作動する電圧レベルを選択。
+[U230,U400,U525,U690,U1000,その他,不明,無]</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Gdli0qVWHuO00025QrE$V">
+			<Name>NominalCurrent</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">定格電流</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">定格電流[A]を少なくても1つ値をセットしなければならない。
+ セット内の任意の値の値を超えてはならない。
+ 定格電流は、同じブレーカ部に関連付けられている。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

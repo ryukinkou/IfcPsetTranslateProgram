@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1Okjk0qSmHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_CondenserPHistory</Name>
+	<Definition>Condenser performance history attributes.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcCondenser</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1hpQk0qSmHuO00025QrE$V">
+			<Name>RefrigerantFoulingResistance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1VuUc0qSmHuO00025QrE$V">
+			<Name>HeatRejectionRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1zhqw0qSmHuO00025QrE$V">
+			<Name>CompressorCondenserPressureDrop</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1deOu0qSmHuO00025QrE$V">
+			<Name>InteriorHeatTransferCoefficient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1w6yU0qSmHuO00025QrE$V">
+			<Name>CompressorCondenserHeatGain</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1a3WS0qSmHuO00025QrE$V">
+			<Name>ExteriorHeatTransferCoefficient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="24rbo0qSmHuO00025QrE$V">
+			<Name>WaterFoulingResistance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="21GjM0qSmHuO00025QrE$V">
+			<Name>CondenserMeanVoidFraction</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1ko9m0qSmHuO00025QrE$V">
+			<Name>CondensingTemperature</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1ozBc0qSmHuO00025QrE$V">
+			<Name>LogarithmicMeanTemperatureDifference</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1sY420qSmHuO00025QrE$V">
+			<Name>UAcurves</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

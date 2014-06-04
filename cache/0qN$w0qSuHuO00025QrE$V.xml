@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0qN$w0qSuHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_CooledBeamPHistory</Name>
+	<Definition>Definition from IAI: Common performance history attributes for a cooled beam.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcCooledBeam</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="13Hh40qSuHuO00025QrE$V">
+			<Name>BeamHeatingCapacity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1WUt_0qSuHuO00025QrE$V">
+			<Name>ReturnWaterTemperatureHeating</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="19F980qSuHuO00025QrE$V">
+			<Name>HeatingWaterFlowRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1PxGW0qSuHuO00025QrE$V">
+			<Name>ReturnWaterTemperatureCooling</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="16GQ60qSuHuO00025QrE$V">
+			<Name>CoolingWaterFlowRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1NYgu0qSuHuO00025QrE$V">
+			<Name>SupplyWaterTemperatureCooling</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Sv$Y0qSuHuO00025QrE$V">
+			<Name>SupplyWaterTemperatureHeating</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1GOw00qSuHuO00025QrE$V">
+			<Name>CorrectionFactorForHeating</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1JzoS0qSuHuO00025QrE$V">
+			<Name>WaterPressureDropCurves</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Cq1a0qSuHuO00025QrE$V">
+			<Name>CorrectionFactorForCooling</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0yk3c0qSuHuO00025QrE$V">
+			<Name>TotalHeatingCapacity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="10Iy20qSuHuO00025QrE$V">
+			<Name>BeamCoolingCapacity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0vlKa0qSuHuO00025QrE$V">
+			<Name>TotalCoolingCapacity</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

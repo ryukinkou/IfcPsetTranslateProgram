@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2Vni80qWWHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_SpaceCommon</Name>
+	<Definition>Properties common to the definition of all occurrences of IfcSpace. Please note that several space attributes are handled directly at the IfcSpace instance, the space number (or short name) by IfcSpace.Name, the space name (or long name) by IfcSpace:LongName, and the description (or comments) by IfcSpace.Description. Actual space quantities, like space perimeter, space area and space volume are provided by IfcElementQuantity, and space classification according to national building code by IfcClassificationReference. The level above zero (relative to the building) for the slab row construction is provided by the IfcBuildingStorey.Elevation, the level above zero (relative to the building) for the floor finish is provided by the IfcSpace.ElevationWithFlooring.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcSpace</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : propriétés communes à la définition de toutes les instances de la classe IfcSpace. Veuillez noter que plusieurs attributs sont portés par l'instance IfcSpace : le numéro de la pièce ou le nom court (IfcSpace.Name), le nom ou nom long (IfcSpace:LongName) et la description ou des commentaires (IfcSpace.Description). Les quantités comme le périmètre, la surface et le volume de la pièce sont fournis par des instances de IfcElementQuantity, et la référence à une classification nationale par IfcClassificationReference. L'élévation de la dalle relativement au niveau de référence du bâtiment est fourni par IfcBuildingStorey.Elevation.  L'élévation du plancher relativement au niveau de référence du bâtiment est fourni par IfcSpace.ElevationWithFlooring.</PsetDefinitionAlias>
+		<PsetDefinitionAlias lang="ja-JP">IfcSpaceに関する共通プロパティセット定義。以下の属性値に関しては、IfcSpaceオブジェクトの属性に設定する。部屋番号はIfcSite.Name、部屋名称はIfcSite.LongName、部屋に関する記述はIfcSite.Description。部屋（空間）に関する周囲長、面積、体積などの数量値は、IfcElementQuantitiesによって設定する。部屋（空間）に関する分類コードはIfcClassificationReferenceによって設定する。スラブに対するレベルはIfcBuildingStorey.Elevationによって与えられる。床仕上げに対するレベルはIfcSpace.ElevationWithFlooringによって与えられる。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2e7lq0qWWHuO00025QrE$V">
+			<Name>Reference</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Raumtyp</NameAlias>
+				<NameAlias lang="fr-FR">Reference</NameAlias>
+				<NameAlias lang="ja-JP">参照記号</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Bezeichnung zur Zusammenfassung gleichartiger Räume zu einem Raumtyp (auch Funktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Raumtypen als Typobjekte unterstützt.</DefinitionAlias>
+				<DefinitionAlias lang="fr-FR">Référence à l'identifiant d'un type spécifié dans le contexte de ce projet (exemple : "type A1"). A fournir s'il n'y a pas de référence à une classification en usage.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0KcVm0qWaHuO00025QrE$V">
+			<Name>HandicapAccessible</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">behindertengerecht zugänglich</NameAlias>
+				<NameAlias lang="fr-FR">AccessibleHandicapes</NameAlias>
+				<NameAlias lang="ja-JP">ハンディキャップアクセス可能性</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Angabe, ob dieser Raum (wie z.B. eine Toilette) behindertengerecht zugänglich sein soll (JA) oder nicht (NEIN).</DefinitionAlias>
+				<DefinitionAlias lang="fr-FR">Indique si l'élément est conçu pour être accessible aux handicapés (VRAI) ou non (FAUX). Cette information est souvent utilisée pour déclarer la nécessité d'un accès pour handicapés ou pour des contraintes spéciales de conception.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">この部屋（空間）がハンディキャップ者向けの空間かどうかを示すブーリアン値。例：公共トイレの場合TRUE。この情報は、障害者向け利用の必要性や特別なデザインの必要性を示すために利用される。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0DSku0qWaHuO00025QrE$V">
+			<Name>PubliclyAccessible</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">öffentlich zugänglich</NameAlias>
+				<NameAlias lang="fr-FR">AccessibleAuPublic</NameAlias>
+				<NameAlias lang="ja-JP">公共アクセス可能性</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Angabe, ob dieser Raum (wie z.B. eine Toilette) öffentlich zugänglich sein soll (JA) oder nicht (NEIN).</DefinitionAlias>
+				<DefinitionAlias lang="fr-FR">Indique si l'espace (par exemple des toilettes) est conçu pour être un espace accessible au public (TRUE) ou non (FALSE).</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">この部屋（空間）が公共アクセス空間かどうかを示すブーリアン値。例：公共トイレの場合TRUE。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="00xfM0qWaHuO00025QrE$V">
+			<Name>GrossPlannedArea</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">計画グロス面積</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">計画されたグロス面積。空間（部屋）計画の際に使用。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="06v7Q0qWaHuO00025QrE$V">
+			<Name>NetPlannedArea</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">計画ネット面積</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">計画されたネット面積。空間（部屋）計画の際に使用。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3t$SG0qWWHuO00025QrE$V">
+			<Name>IsExternal</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">IstAußenraum</NameAlias>
+				<NameAlias lang="ja-JP">外部区分</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Angabe, ob dieser Raum ein Aussenaum ist (JA) oder ein Innenraum (NEIN).</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

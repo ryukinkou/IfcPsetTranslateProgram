@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2szRU0qUWHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_FootingCommon</Name>
+	<Definition>Properties common to the definition of all occurrences of IfcFooting.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcFooting</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">生成されたすべてのIfcFooting の定義に共通するプロパティ。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1ZzKWDQOL5u9pDcXG$gSJs">
+			<Name>Status</Name>
+			<PropertyType>
+				<TypePropertyEnumeratedValue>
+					<EnumList name="PEnum_ElementStatus">
+						<EnumItem>NEW</EnumItem>
+						<EnumItem>EXISTING</EnumItem>
+						<EnumItem>DEMOLISH</EnumItem>
+						<EnumItem>TEMPORARY</EnumItem>
+						<EnumItem>OTHER</EnumItem>
+						<EnumItem>NOTKNOWN</EnumItem>
+						<EnumItem>UNSET</EnumItem>
+					</EnumList>
+				</TypePropertyEnumeratedValue>
+			</PropertyType>
+			<Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">状態</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2zX2y0qUWHuO00025QrE$V">
+			<Name>Reference</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">参照記号</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">当プロジェクトにおけるこの指定型式のためのリファレンスID。（たとえは、'A-1'型)</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

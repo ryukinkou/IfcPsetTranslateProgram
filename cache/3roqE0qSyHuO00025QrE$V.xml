@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3roqE0qSyHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_CoveringCeiling</Name>
+	<Definition>Properties common to the definition of all occurrence and type objects of covering with the predefined type set to CEILING.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcCovering/CEILING</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="zh-CN">所有PredefinedType设置为CEILING的IfcCovering实例的定义中通用的属性。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="046L_0qT0HuO00025QrE$V">
+			<Name>TileLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Deckenplattenlänge</NameAlias>
+				<NameAlias lang="zh-CN">面砖长度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Länge der Unterdeckenplatten, oder -panele, die zur Verkleidung verwendet werden.</DefinitionAlias>
+				<DefinitionAlias lang="zh-CN">天花板面砖的长度。
+该属性所提供的尺寸信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的尺寸属性不符，应以几何参数为准。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="09Tge0qT0HuO00025QrE$V">
+			<Name>TileWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Deckenplattenbreite</NameAlias>
+				<NameAlias lang="zh-CN">面砖宽度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Breite der Unterdeckenplatten, oder -panele, die zur Verkleidung verwendet werden.</DefinitionAlias>
+				<DefinitionAlias lang="zh-CN">天花板面砖的宽度。
+该属性所提供的尺寸信息是对内部形状描述和几何参数的补充。如果几何参数与该属性所提供的尺寸属性不符，应以几何参数为准。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3_l1K0qSyHuO00025QrE$V">
+			<Name>Permeability</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="de-DE">Durchlässigkeit</NameAlias>
+				<NameAlias lang="zh-CN">渗透率</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="de-DE">Durchlässigkeit der Unterdecke als Faktor zwischen 0 Undurchlässig und 1 völlig durchlässig. Der Faktor kann zur Abschätzung genutzt werden, ob die Unterdecke zur Decke hin offen und durchlässig (für Licht, Wasser und Sicht) ist.</DefinitionAlias>
+				<DefinitionAlias lang="zh-CN">天花板的渗透比率。
+该比率可用以表示开敞式天花板（表示天花板能否阻隔其内侧的喷淋水、光线等的）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

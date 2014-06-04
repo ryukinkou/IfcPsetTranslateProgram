@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3ULd_0qVmHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProtectiveDeviceTrippingUnitTypeThermal</Name>
+	<Definition>Information on tripping units that are thermally tripped.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcProtectiveDeviceTrippingUnit/THERMAL</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">温度により遮断するトリップ装置の情報。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3ocdo0qVmHuO00025QrE$V">
+			<Name>I1</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">I1</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">サーマルの低試験電流限界値を [x In]、電流は I1　よりも低い値を示す。トリップ時間は関連する T2 の時間よりも長い。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Ziye0qVmHuO00025QrE$V">
+			<Name>ThermalTrippingUnitType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">サーマルトリップ装置タイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">選択を必要とするときのためのサーマルトリップ装置の選択リスト。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="03IlA0qVqHuO00025QrE$V">
+			<Name>DefinedTemperature</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">設定温度</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">この保護装置が定める温度・電流/時間-カーブに関連する周囲温度</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="09GDE0qVqHuO00025QrE$V">
+			<Name>TemperatureFactor</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">温度係数</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">熱の電流/時間を、定義済みの温度によって与えられる値と異なる場合に周囲温度に合わせるための補正係数（%/deg K で計測する）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3zxQW0qVmHuO00025QrE$V">
+			<Name>T2</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">T2</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">サーマルの試験時間を [s] , 関連する試験電流を I1 と I2　とする。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3ua5s0qVmHuO00025QrE$V">
+			<Name>I2</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">I2</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">サーマルの高試験電流限界値を [x In], 電流は I2 よりも高い値を示す。トリップ時間は関連する T2 の時間よりも短い。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0E1OU0qVqHuO00025QrE$V">
+			<Name>CurveDesignation</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">曲線指定</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">メーカーが提供する指定のトリッピングカーブ。MCBのために、指定はIEC 60898に準拠しなければならない。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

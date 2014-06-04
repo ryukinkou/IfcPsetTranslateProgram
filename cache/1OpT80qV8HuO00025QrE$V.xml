@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1OpT80qV8HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_Permit</Name>
+	<Definition>A permit is a document that allows permission to gain access to an area or carry out work in a situation where security or other access restrictions apply.
+HISTORY: IFC 2x4 EndDate added. PermitType, PermitDuration, StartTime and EndTime are deleted.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcPermit</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1TaeO0qV8HuO00025QrE$V">
+			<Name>EscortRequirement</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1fVaW0qV8HuO00025QrE$V">
+			<Name>EndDate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1ZY6S0qV8HuO00025QrE$V">
+			<Name>StartDate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1kGlm0qV8HuO00025QrE$V">
+			<Name>SpecialRequirements</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

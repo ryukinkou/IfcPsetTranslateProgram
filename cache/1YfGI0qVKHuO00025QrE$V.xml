@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1YfGI0qVKHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProfileArbitraryDoubleT</Name>
+	<Definition>This is a collection of geometric properties of double-T section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDef when profile designation alone does not fulfill the information requirements.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcArbitraryClosedProfileDef</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2ZdHa0qVKHuO00025QrE$V">
+			<Name>StemBaseWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1fCtm0qVKHuO00025QrE$V">
+			<Name>OverallWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2UFyw0qVKHuO00025QrE$V">
+			<Name>FlangeTopFillet</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2gAv20qVKHuO00025QrE$V">
+			<Name>StemTopWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1tWPW0qVKHuO00025QrE$V">
+			<Name>RightFlangeWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2mkWW0qVKHuO00025QrE$V">
+			<Name>StemBaseChamfer</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2s5rA0qVKHuO00025QrE$V">
+			<Name>StemTopChamfer</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="30qUU0qVKHuO00025QrE$V">
+			<Name>StemTopFillet</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1_40_0qVKHuO00025QrE$V">
+			<Name>OverallDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2y3JE0qVKHuO00025QrE$V">
+			<Name>StemBaseFillet</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2Czi80qVKHuO00025QrE$V">
+			<Name>FlangeDraft</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2OueG0qVKHuO00025QrE$V">
+			<Name>FlangeBaseFillet</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2IL0o0qVKHuO00025QrE$V">
+			<Name>FlangeChamfer</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1mMee0qVKHuO00025QrE$V">
+			<Name>LeftFlangeWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="24deS0qVKHuO00025QrE$V">
+			<Name>FlangeDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

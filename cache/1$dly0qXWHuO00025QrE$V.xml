@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1$dly0qXWHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_WasteTerminalTypeWasteTrap</Name>
+	<Definition>Pipe fitting, set adjacent to a sanitary terminal, that retains liquid to prevent the passage of foul air.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcWasteTerminal/WASTETRAP</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">液体を溜めて汚れた空気の通過を防ぐよう衛生機器に隣接して設置させた配管。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2GJtK0qXWHuO00025QrE$V">
+			<Name>OutletConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">排出口接続口サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">要素からの接続口サイズ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="23ono0qXWHuO00025QrE$V">
+			<Name>WasteTrapType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">廃棄物防臭弁種類</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">必要とされるタイプがセットされる防臭弁の定義されたタイプを確認してください。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2O3nc0qXWHuO00025QrE$V">
+			<Name>InletConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">吸気口接続口サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">吸気口接続口のサイズ。
+
+注意：同サイズの吸気口接続口がないものとします。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

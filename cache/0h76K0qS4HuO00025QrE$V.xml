@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0h76K0qS4HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_AnnotationContourLine</Name>
+	<Definition>Specifies parameters of a standard curve that has a single, consistent measure value.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcAnnotation/ContourLine</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : paramètres spécifiques à une courbe standard qui a une valeur simple et cohérente.</PsetDefinitionAlias>
+		<PsetDefinitionAlias lang="ja-JP">IfcAnnotation（注記）オブジェクトに関する標準の曲線に対する単一、同一の情報を設定するプロパティセット定義。GIS関連情報を扱う。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0q3JQ0qS4HuO00025QrE$V">
+			<Name>ContourValue</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">ValeurContour</NameAlias>
+				<NameAlias lang="ja-JP">等高線値</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Valeur de l'élévation du contour au dessus ou au dessous d'un plan de référence.</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">参照平面に対する等高線の高さ値。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

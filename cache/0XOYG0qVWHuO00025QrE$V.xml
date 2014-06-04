@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0XOYG0qVWHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_PropertyAgreement</Name>
+	<Definition>A property agreement is an agreement that enables the occupation of a property for a period of time.
+
+The objective is to capture the information within an  agreement that is relevant to a facilities manager. Design and construction information associated with the property is not considered. A property agreement may be applied to an instance of IfcSpatialStructureElement including to compositions defined through the IfcSpatialStructureElement.Element.CompositionEnum.
+
+Note that the associated actors are captured by the IfcOccupant class.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcSpatialStructureElement</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="1RCog0qVWHuO00025QrE$V">
+			<Name>VersionDate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1tDim0qVWHuO00025QrE$V">
+			<Name>TerminationDate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="209vs0qVWHuO00025QrE$V">
+			<Name>Duration</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2Gs1E0qVWHuO00025QrE$V">
+			<Name>ConditionCommencement</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1GU9M0qVWHuO00025QrE$V">
+			<Name>Version</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1kHVg0qVWHuO00025QrE$V">
+			<Name>CommencementDate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0i7Ba0qVWHuO00025QrE$V">
+			<Name>AgreementType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1ZYsM0qVWHuO00025QrE$V">
+			<Name>PropertyName</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="27vq80qVWHuO00025QrE$V">
+			<Name>Options</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2WLro0qVWHuO00025QrE$V">
+			<Name>ConditionTermination</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2QONk0qVWHuO00025QrE$V">
+			<Name>Restrictions</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="16LfS0qVWHuO00025QrE$V">
+			<Name>Identifier</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

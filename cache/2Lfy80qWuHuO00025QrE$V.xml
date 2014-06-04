@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2Lfy80qWuHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_SwitchingDeviceTypeStarter</Name>
+	<Definition>A starter is a switch which in the closed position controls the application of power to an electrical device.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcSwitchingDevice/STARTER</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">スタータースイッチは閉じた状態の位置から、電気装置に対し電力の利用を制御する装置。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2Pqz_0qWuHuO00025QrE$V">
+			<Name>StarterType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">始動タイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">以下より選択が必要となる、始動の一覧リスト：
+
+自動： 自動トランスから引き出された１つ以上の低下した電圧でスタートするために使用する誘導電動機用のスターター (IEC 441-14-45)
+手動： メインのコンタクトから強制的に分離されたところにあり、手動によりエネルギーが供給される (IEC 441-14-39)
+じか入れ: ワンステップでモーター・ターミナル間の線間電圧をつなぐスターター (IEC 441-14-40)
+振動：電源の振動数が通常の操作振動まで次第に増大して行くスターター
+nStep: オフ（OFF)とオン（ON）の間で、（n-1）の中間の加速度的な位置であるスターター。 (IEC 441-14-41)
+抵抗：モータのトルク特性の取得、開始、そして安定する間に、電流を制限するために 1 つまたはいくつかの抵抗を利用したスターター (IEC 441-14-425) 
+スターデルタ：開始位置では固定小巻線（スターターワインディング）が星状で接続され、その後、最終の実行状態ではデルタ状に接続されるという3相誘導モーター用のスターター。（IEC 441-14-44）</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

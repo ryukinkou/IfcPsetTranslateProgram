@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1WZtM0qVOHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProfileMechanical</Name>
+	<Definition>This is a collection of mechanical properties that are applicable to virtually all profile classes. Most of these properties are especially used in structural analysis.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcProfileDef</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2zYok0qVOHuO00025QrE$V">
+			<Name>TorsionalConstantX</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3pC1I0qVOHuO00025QrE$V">
+			<Name>MaximumSectionModulusZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0bGNQ0qVSHuO00025QrE$V">
+			<Name>PlasticShapeFactorZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1bxC00qVOHuO00025QrE$V">
+			<Name>MassPerLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="35usQ0qVOHuO00025QrE$V">
+			<Name>WarpingConstant</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="20lpI0qVOHuO00025QrE$V">
+			<Name>MaximumPlateThickness</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3hS700qVOHuO00025QrE$V">
+			<Name>MinimumSectionModulusY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0Be2y0qVSHuO00025QrE$V">
+			<Name>ShearAreaZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0TWT80qVSHuO00025QrE$V">
+			<Name>PlasticShapeFactorY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2biwU0qVOHuO00025QrE$V">
+			<Name>MomentOfInertiaY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0KaG20qVSHuO00025QrE$V">
+			<Name>ShearAreaY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2PBqy0qVOHuO00025QrE$V">
+			<Name>ShearCentreZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="025iS0qVSHuO00025QrE$V">
+			<Name>TorsionalSectionModulus</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2rCl20qVOHuO00025QrE$V">
+			<Name>MomentOfInertiaYZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2jSqm0qVOHuO00025QrE$V">
+			<Name>MomentOfInertiaZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3NnGc0qVOHuO00025QrE$V">
+			<Name>ShearDeformationAreaY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3G1MK0qVOHuO00025QrE$V">
+			<Name>ShearDeformationAreaZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1giNG0qVOHuO00025QrE$V">
+			<Name>CrossSectionArea</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1sdJO0qVOHuO00025QrE$V">
+			<Name>MinimumPlateThickness</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2I2440qVOHuO00025QrE$V">
+			<Name>CentreOfGravityInY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3XJd60qVOHuO00025QrE$V">
+			<Name>MaximumSectionModulusY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3vlem0qVOHuO00025QrE$V">
+			<Name>MinimumSectionModulusZ</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2VlSQ0qVOHuO00025QrE$V">
+			<Name>ShearCentreY</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1m3hw0qVOHuO00025QrE$V">
+			<Name>Perimeter</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2AI9o0qVOHuO00025QrE$V">
+			<Name>CentreOfGravityInX</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

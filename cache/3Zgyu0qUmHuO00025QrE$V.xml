@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3Zgyu0qUmHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_MaterialConcrete</Name>
+	<Definition>A set of extended mechanical properties related to concrete materials.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcMaterial/Concrete</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3yj7y0qUmHuO00025QrE$V">
+			<Name>Workability</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="01UJC0qUqHuO00025QrE$V">
+			<Name>WaterImpermeability</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3tLpI0qUmHuO00025QrE$V">
+			<Name>AdmixturesDescription</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3mC2Q0qUmHuO00025QrE$V">
+			<Name>MaxAggregateSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3gEaM0qUmHuO00025QrE$V">
+			<Name>CompressiveStrength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="07RnG0qUqHuO00025QrE$V">
+			<Name>ProtectivePoreRatio</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

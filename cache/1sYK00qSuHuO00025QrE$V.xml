@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1sYK00qSuHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_CooledBeamTypeActive</Name>
+	<Definition>Active (ventilated) cooled beam common attributes.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcCooledBeam/ACTIVE</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2HMxI0qSuHuO00025QrE$V">
+			<Name>SupplyAirConnectionType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1yVo40qSuHuO00025QrE$V">
+			<Name>AirFlowConfiguration</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2ApJq0qSuHuO00025QrE$V">
+			<Name>AirflowRateRange</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2WGcS0qSuHuO00025QrE$V">
+			<Name>ConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3AOKo0qW4HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_SanitaryTerminalTypeBath</Name>
+	<Definition>Sanitary appliance for immersion of the human body or parts of it (BS6100). HISTORY: In IFC2x4, Material and MaterialThickness properties removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value)</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcSanitaryTerminal/BATH</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">人体の全体かその一部を浸す衛生器具（BS6100）。履歴：IFC2x4では材料および材料厚さ属性削除。使用材料の機能は IfcMaterialsResourceスキーマを使用。色のデータ型は、（まだ文字列値）IfcLabelに変更。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0FXNw0qW8HuO00025QrE$V">
+			<Name>DrainSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">ドレインサイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">排水口の接続のサイズ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3bp5U0qW4HuO00025QrE$V">
+			<Name>NominalLength</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">呼び長さ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">公称または引用長さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0NHIC0qW8HuO00025QrE$V">
+			<Name>HasGrabHandles</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">手すりの有無</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">風呂の出入りを補助する手すりが取り付けられているかどうかを示す。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3GLos0qW4HuO00025QrE$V">
+			<Name>BathType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">バスタイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">列挙するプロパティは、プロパティセット内で指定することができるバスの種類の定義：
+
+家庭用：全身を簡単に浸漬することができる一度に1人の人間が入るバス。
+
+家庭用Corner：浸漬トラフが傾いていて、全身を簡単に浸漬することができる一度に1人の人間が入るバス。
+
+フットバス：足を洗う浅いバス。
+
+ジャグジー：複数の人のための渦のバス
+
+プランジバス：通常は全身を簡単に浸漬することができまる一度に複数の人の入るバス。
+
+座バス：水浴を椅子のように座って行うバス。
+
+治療バス：水浴セラピーの目的に使用されるバス。
+
+渦バス：ポンプによる水の循環や、水や空気の誘引により水を攪拌する統合された装置としてのバス。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3klIa0qW4HuO00025QrE$V">
+			<Name>NominalWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">呼び幅</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">公称または引用幅。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="07nTe0qW8HuO00025QrE$V">
+			<Name>Color</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">色</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">主要な色。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3utoU0qW4HuO00025QrE$V">
+			<Name>NominalDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">公称深さ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">公称または引用深さ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

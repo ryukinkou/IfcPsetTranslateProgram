@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3_B7e0qU4HuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_EnvironmentalImpactValues</Name>
+	<Definition>The following properties capture environmental impact values of an element. They correspond to the indicators defined into Pset_EnvironmentalImpactIndicators. 
+Environmental impact values are obtained multiplying indicator value per unit by the relevant quantity of the element.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcElement</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : les propriétés suivantes capturent les valeurs des impacts environnementaux d'un élément. Ils correspondent aux indicateurs définis dans Pset_EnvironmentalImpactIndicators.</PsetDefinitionAlias>
+		<PsetDefinitionAlias lang="ja-JP">IAIによる定義：次のプロパティは、要素の環境への影響値を捕える。それらは Pset_EnvironmentalImpactIndicators に定義されている指標に対応。
+環境に影響する値は、要素の適切な数量によって、単位あたりに割り増した値を取得。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0VZMO0qU8HuO00025QrE$V">
+			<Name>AtmosphericAcidification</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">AcidificationAtmospherique</NameAlias>
+				<NameAlias lang="ja-JP">大気の酸性化</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de gaz responsables de l'acidification atmosphérique exprimée en Kg d'équivalent SO2, selon les normes PrEN15804:2008 [NDT : ou NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">算出されたSO2と等しい大気中の酸性化の責任を負うガスの量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="10xb80qU8HuO00025QrE$V">
+			<Name>StratosphericOzoneLayerDestruction</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DestructionCoucheOzoneStartospherique</NameAlias>
+				<NameAlias lang="ja-JP">大気オゾン層破壊</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de gaz destructeurs de la couche d'ozone exprimée en équivalent CFC-R11  [NDT : selon la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">算出された CFC-R11と等しい大気オゾン層を破壊するガスの量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0xaGU0qU8HuO00025QrE$V">
+			<Name>RadioactiveWaste</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DechetsRadioactifs</NameAlias>
+				<NameAlias lang="ja-JP">放射性廃棄物</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de déchets radioactifs générés [NDT : selon la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">生成される放射性廃棄物の量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="16v3C0qU8HuO00025QrE$V">
+			<Name>PhotochemicalOzoneFormation</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">FormationOzonePhotochimique</NameAlias>
+				<NameAlias lang="ja-JP">光化学オゾン生成</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de gaz producteurs d'ozone photochimique exprimée en équivalent ethylène  [NDT : selon la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">算出された エチレンと等しい光化学オゾン層を生成するガスの量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0mFTm0qU8HuO00025QrE$V">
+			<Name>ResourceDepletion</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">EpuisementRessources</NameAlias>
+				<NameAlias lang="ja-JP">資源の枯渇</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de ressources consommées exprimée en équivalent Antimoine [NDT : selon la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">算出されたアンチモンと同等な資源の量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="048bi0qU8HuO00025QrE$V">
+			<Name>TotalPrimaryEnergyConsumption</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">ConsommationTotaleEnergiePrimaire</NameAlias>
+				<NameAlias lang="ja-JP">主なエネルギー消費の総量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Consommation d'énergie primaire utilisée, telle que définie dans les normes ISO21930:2007 [NDT : ou NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">ISO21930:2007.で定義されているエネルギー量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0FTOQ0qU8HuO00025QrE$V">
+			<Name>HazardousWaste</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DechetsDangereux</NameAlias>
+				<NameAlias lang="ja-JP">有害廃棄物</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de déchets dangereux générés [NDT : tels que définis dans la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">生成される有害廃棄物の量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0gu960qU8HuO00025QrE$V">
+			<Name>NonRenewableEnergyConsumption</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">ConsommationEnergieNonRenouvelable</NameAlias>
+				<NameAlias lang="ja-JP">継続不可能なエネルギー消費量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Consommation d'énergie non renouvelable telle que définie dans les normes ISO21930:2007 [NDT : ou NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">ISO21930:2007 で定義されている継続不可能なエネルギー消費量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="09VwM0qU8HuO00025QrE$V">
+			<Name>WaterConsumption</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">ConsommationEau</NameAlias>
+				<NameAlias lang="ja-JP">水消費量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité d'eau utilisée [NDT : telle que définie dans la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">水の消費量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0QC1k0qU8HuO00025QrE$V">
+			<Name>ClimateChange</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">ChangementClimatique</NameAlias>
+				<NameAlias lang="ja-JP">気候変化</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité d'émissions de gaz à effet de serre exprimée en Kg d'équivalent CO2, selon les normes PrEN15804:2008 [NDT : ou NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">算出されたCO2と等しい放出される温室効果ガスの量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0rcoQ0qU8HuO00025QrE$V">
+			<Name>InertWaste</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DechetsInertes</NameAlias>
+				<NameAlias lang="ja-JP">安定廃棄物</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de déchets inertes générés  [NDT : selon la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">生成される安定廃棄物の量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="1CsXG0qU8HuO00025QrE$V">
+			<Name>Eutrophication</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">Eutrophisation</NameAlias>
+				<NameAlias lang="ja-JP">富栄養化</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de composés responsables de l'eutrophisation exprimée en équivalent P04 [NDT : selon la norme PrEN15804:2008]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">算出されたPO4と等しい富栄養化を混合する量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0Kqj40qU8HuO00025QrE$V">
+			<Name>NonHazardousWaste</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DechetsNonDangereux</NameAlias>
+				<NameAlias lang="ja-JP">一般廃棄物</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Quantité de déchets non dangereux générés [NDT : tels que définis dans la norme NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">生成される一般廃棄物の量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0bWqS0qU8HuO00025QrE$V">
+			<Name>RenewableEnergyConsumption</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">ConsommationEnergieRenouvelable</NameAlias>
+				<NameAlias lang="ja-JP">継続可能なエネルギー消費量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Consommation d'énergie renouvelable telle que définie dans les normes ISO21930:2007 [NDT : ou NF P01-010]</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">ISO21930:2007 で定義されている継続可能なエネルギー消費量。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

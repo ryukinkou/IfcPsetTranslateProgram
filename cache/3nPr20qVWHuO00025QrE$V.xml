@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3nPr20qVWHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProtectiveDeviceBreakerUnitI2TFuseCurve</Name>
+	<Definition>A coherent set of attributes representing curves for melting- and breaking-energy of a fuse. Note - A fuse may be associated with different instances of this property set providing information related to different  basic characteristics.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcProtectiveDevice</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">フューズの融解-遮断エネルギー曲線を表す一連のプロパティセット。
+注記-フューズは、根本的な特性に関連付けられた提供されたプロパティの情報は、　異なる実態に関連しているかもしれません。　　　　　　　　　　　　　　　　　</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3tNJ60qVWHuO00025QrE$V">
+			<Name>VoltageLevel</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">電圧レベル</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">電圧レベルを選択。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0cSwC0qVaHuO00025QrE$V">
+			<Name>BreakerUnitFuseBreakingingCurve</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">フューズ遮断機融解曲線</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">想定外の電流が流れた時に遮断機のフューズを溶かすために必要なエネルギーを表す曲線。
+  想定外の電流が流れた時に遮断機のフューズを溶かすために必要なエネルギーを表す曲線。
+
+  （1）定義値：融解電流：電流/ 融解エネルギーで示される最小2から最大8のリストで電流[A]を定義します。
+   カーブが連続する2つの点を結ぶ直線として描かれています。
+  （2）定義値：融解エネルギー：/電流/融解エネルギーの位置[A2s]で示される2～16の想定されるフューズが溶解始める電流[A2s]を定義します。カーブが連続する2つの点を結ぶ直線として描かれています。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="0LAfQ0qVaHuO00025QrE$V">
+			<Name>BreakerUnitFuseMeltingCurve</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">フューズ遮断機融解曲線</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">想定外の電流が流れた時に遮断機のフューズを溶かすために必要なエネルギーを表す曲線。
+  想定外の電流が流れた時に遮断機のフューズを溶かすために必要なエネルギーを表す曲線。
+
+  （1）定義値：融解電流：電流/ 融解エネルギーで示される最小2から最大8のリストで電流[A]を定義します。
+   カーブが連続する2つの点を結ぶ直線として描かれています。
+  （2）定義値：融解エネルギー：/電流/融解エネルギーの位置[A2s]で示される2～16の想定されるフューズが溶解始める電流[A2s]を定義します。カーブが連続する2つの点を結ぶ直線として描かれています。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

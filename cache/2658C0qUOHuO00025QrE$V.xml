@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2658C0qUOHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_FireSuppressionTerminalTypeFireHydrant</Name>
+	<Definition>Device, fitted to a pipe, through which a temporary supply of water may be provided (BS6100 330 6107)
+
+For further details on fire hydrants, see www.firehydrant.org</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcFireSuppressionTerminal/FIREHYDRANT</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="ja-JP">（BS61003306107）から供給される一時的な水を通す配管に取り付けられる装置。
+
+消火栓の詳細については、www.firehydrant.orgを参照。</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2bgwk0qUOHuO00025QrE$V">
+			<Name>DischargeFlowRate</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">放水流量</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">放水液体の体積。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2KOfy0qUOHuO00025QrE$V">
+			<Name>PumperConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">ポンプ接続サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">ポンプユニットに接続されであろう消防ホースの接続サイズ。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2xkMm0qUOHuO00025QrE$V">
+			<Name>BodyColor</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">本体色</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">消火栓本体の色。
+
+注意：特定の状況で消火栓ボディに求められる地域消防規則法定色による。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2sN260qUOHuO00025QrE$V">
+			<Name>PressureRating</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">圧力</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">最大圧力、消火栓の耐圧。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2gS5_0qUOHuO00025QrE$V">
+			<Name>FlowClass</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">流量クラス</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">消火栓流量クラスの英数字表示（流量属性と一緒に、または代わりに用いられる）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2QyHQ0qUOHuO00025QrE$V">
+			<Name>NumberOfHoseConnections</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">ホースの接続の数</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">（ポンプ接続を除く）消火栓のホース接続の数。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="30VY00qUOHuO00025QrE$V">
+			<Name>CapColor</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">キャップ色</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">消火栓キャップの色。
+
+注意：特定の状況で消火栓キャップに求められる地域消防規則法定色による。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2m$jS0qUOHuO00025QrE$V">
+			<Name>WaterIsPotable</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">飲用水かどうか</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">消火栓の水が飲用かどうかの表示（飲用：TRUEを設定、飲用以外：FALSEを設定）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2VjSg0qUOHuO00025QrE$V">
+			<Name>HoseConnectionSize</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">ホース接続サイズ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">接続ホースのサイズ（ポンプユニット接続以外の）。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2AGA20qUOHuO00025QrE$V">
+			<Name>FireHydrantType</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="ja-JP">消火栓のタイプ</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="ja-JP">消火栓の必要なタイプを定義する。
+
+乾式l：凍結の可能性のあるとき地中に開放弁セット。
+
+湿式：凍結の可能性のないとき地上に開放弁セット。</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

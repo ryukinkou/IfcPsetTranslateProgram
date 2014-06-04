@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="37O5y0qVKHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ProfileArbitraryHollowCore</Name>
+	<Definition>This is a collection of geometric properties of hollow core section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDefWithVoids when profile designation alone does not fulfill the information requirements.  
+
+In all cases, the cores are symmetrically distributed on either side of the plank center line, irrespective of whether the number of cores is odd or even. For planks with a center core with different geometry to that of the other cores, provide the property CenterCoreSpacing. When the number of cores is even, no Center Core properties shall be asserted.
+
+Key chamfers and draft chamfer are all 45 degree chamfers.
+
+The CoreTopRadius and CoreBaseRadius parameters can be derived and are therefore not listed in the property set. They are shown to define that the curves are arcs. The parameters for the center core are the same as above, but with the prefix "Center".</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcArbitraryProfileDefWithVoids</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0clcy0qVOHuO00025QrE$V">
+			<Name>CoreTopWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0HuTk0qVOHuO00025QrE$V">
+			<Name>CoreMiddleHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0sFRW0qVOHuO00025QrE$V">
+			<Name>CenterCoreBaseHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3VD_C0qVKHuO00025QrE$V">
+			<Name>DraftBaseOffset</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0zPCO0qVOHuO00025QrE$V">
+			<Name>CenterCoreMiddleHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1JSeQ0qVOHuO00025QrE$V">
+			<Name>CenterCoreTopWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3QSoy0qVKHuO00025QrE$V">
+			<Name>EdgeDraft</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3k7fM0qVKHuO00025QrE$V">
+			<Name>KeyDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3ClQc0qVKHuO00025QrE$V">
+			<Name>OverallWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3yRB60qVKHuO00025QrE$V">
+			<Name>BottomCover</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0P2Ec0qVOHuO00025QrE$V">
+			<Name>CoreTopHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3fMU60qVKHuO00025QrE$V">
+			<Name>BaseChamfer</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="14YzG0qVOHuO00025QrE$V">
+			<Name>CenterCoreTopHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0WB$U0qVOHuO00025QrE$V">
+			<Name>CoreBaseWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Bik80qVOHuO00025QrE$V">
+			<Name>CenterCoreBaseWidth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="04B5O0qVOHuO00025QrE$V">
+			<Name>CoreSpacing</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0jvNq0qVOHuO00025QrE$V">
+			<Name>CenterCoreSpacing</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3ouqc0qVKHuO00025QrE$V">
+			<Name>KeyHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1QcPI0qVOHuO00025QrE$V">
+			<Name>NumberOfCores</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3JJ240qVKHuO00025QrE$V">
+			<Name>OverallDepth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3tf$s0qVKHuO00025QrE$V">
+			<Name>KeyOffset</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Z$9S0qVKHuO00025QrE$V">
+			<Name>DraftSideOffset</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0BKsG0qVOHuO00025QrE$V">
+			<Name>CoreBaseHeight</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

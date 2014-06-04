@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0D$Ok0qUqHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_MaterialEnergy</Name>
+	<Definition>A set of extended material properties for energy calculation purposes.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcMaterial</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0qky80qUqHuO00025QrE$V">
+			<Name>GasPressure</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0eq000qUqHuO00025QrE$V">
+			<Name>VisibleRefractionIndex</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0O7ue0qUqHuO00025QrE$V">
+			<Name>MoistureCapacityThermalGradient</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0U5Mi0qUqHuO00025QrE$V">
+			<Name>ThermalConductivityTemperatureDerivative</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0YsXy0qUqHuO00025QrE$V">
+			<Name>SpecificHeatTemperatureDerivative</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0IAQa0qUqHuO00025QrE$V">
+			<Name>ViscosityTemperatureDerivative</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0lNdU0qUqHuO00025QrE$V">
+			<Name>SolarRefractionIndex</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

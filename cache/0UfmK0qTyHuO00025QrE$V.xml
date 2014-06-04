@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0UfmK0qTyHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ElectricalDeviceCommon</Name>
+	<Definition>A collection of properties that are commonly used by electrical device types.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcDistributionElement</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="0UfemTNJT8khovIpWn29kM">
+			<Name>NominalFrequencyRange</Name>
+			<PropertyType>
+				<TypePropertyBoundedValue>
+					<ValueRangeDef>
+						<LowerBoundValue value="UNKNOWN"/>
+						<UpperBoundValue value="UNKNOWN"/>
+					</ValueRangeDef>
+					<DataType type="IfcFrequencyMeasure"/>
+				</TypePropertyBoundedValue>
+			</PropertyType>
+			<Definition>The upper and lower limits of frequency for which the operation of the device is certified.</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2xwFl7f056tQswqTwBeB06">
+			<Name>PowerFactor</Name>
+			<PropertyType>
+				<TypePropertySingleValue>
+					<DataType type="IfcNormalisedRatioMeasure"/>
+				</TypePropertySingleValue>
+			</PropertyType>
+			<Definition>The ratio between the rated electrical power and the product of the rated current and rated voltage</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3wdT6rlrf9tRP6nggIlRDW">
+			<Name>RatedVoltage</Name>
+			<PropertyType>
+				<TypePropertyBoundedValue>
+					<ValueRangeDef>
+						<LowerBoundValue value="UNKNOWN"/>
+						<UpperBoundValue value="UNKNOWN"/>
+					</ValueRangeDef>
+					<DataType type="IfcElectricVoltageMeasure"/>
+				</TypePropertyBoundedValue>
+			</PropertyType>
+			<Definition>The voltage that a device is designed to handle.</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1TFB_0qTyHuO00025QrE$V">
+			<Name>InsulationStandardClass</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1BMno0qTyHuO00025QrE$V">
+			<Name>NumberOfPoles</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1MhaW0qTyHuO00025QrE$V">
+			<Name>IP_Code</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="0uA_NPqNL1PAbblov4t9fq">
+			<Name>RatedCurrent</Name>
+			<PropertyType>
+				<TypePropertyBoundedValue>
+					<ValueRangeDef>
+						<LowerBoundValue value="UNKNOWN"/>
+						<UpperBoundValue value="UNKNOWN"/>
+					</ValueRangeDef>
+					<DataType type="IfcElectricCurrentMeasure"/>
+				</TypePropertyBoundedValue>
+			</PropertyType>
+			<Definition>The current that a device is designed to handle.</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="1Gk6S0qTyHuO00025QrE$V">
+			<Name>HasProtectiveEarth</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2TbI_F2rDDGeJFL3V29IrE">
+			<Name>ConductorFunction</Name>
+			<PropertyType>
+				<TypePropertyEnumeratedValue>
+					<EnumList name="PEnum_ConductorFunctionEnum">
+						<EnumItem>L1</EnumItem>
+						<EnumItem>L2</EnumItem>
+						<EnumItem>L3</EnumItem>
+					</EnumList>
+				</TypePropertyEnumeratedValue>
+			</PropertyType>
+			<Definition>Function of a line conductor to which a device  is intended to be connected where L1, L2 and L3 represent the phase lines according to IEC 60446 notation (sometimes phase lines may be referenced by color [Red, Blue, Yellow] or by number [1, 2, 3] etc). Protective Earth is sometimes also known as CPC or common protective conductor. Note that for an electrical device, a set of line conductor functions may be applied.</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2u_ay0qSKHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_BuildingUse</Name>
+	<Definition>Provides information on on the real estate context of the building of interest both current and anticipated.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcBuilding</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PsetDefinitionAliases>
+		<PsetDefinitionAlias lang="fr-FR">Définition de l'IAI :  information sur le contexte immobilier actuel et futur du bâtiment considéré.</PsetDefinitionAlias>
+	</PsetDefinitionAliases>
+	<PropertyDefs>
+		<PropertyDef ifdguid="3JpCE0qSKHuO00025QrE$V">
+			<Name>VacancyRateInCategoryNow</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">TauxVacanceActuelParCategorie</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Taux de vacance actuel pour la catégorie.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3F20_0qSKHuO00025QrE$V">
+			<Name>NarrativeText</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">TexteLibre</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Information relative aux bâtiments voisins qui n'est pas appropriée au texte d'ordre général que l'on peut saisir dans l'attribut hérité IfcRoot.Description.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="2z9co0qSKHuO00025QrE$V">
+			<Name>MarketCategory</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">CategorieMarche</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Catégorie d'usage (résidentiel, commercial, loisir,…)</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3hf4U0qSKHuO00025QrE$V">
+			<Name>VacancyRateInCategoryFuture</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">TauxVacanceFuturParCategorie</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Taux de vacance attendu dans le futur pour la catégorie.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="394Yw0qSKHuO00025QrE$V">
+			<Name>PlanningControlStatus</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">EtatPlanningControle</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Catégorie de zone ou classe, ou catégorie relativement à un planning de contrôle pour le site ou l'ensemble immobilier.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3n0P80qSKHuO00025QrE$V">
+			<Name>TenureModesAvailableFuture</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">PossibilitesOccupationFutures</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Liste des possibilités d'occupation futures.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3374s0qSKHuO00025QrE$V">
+			<Name>MarketSubCategory</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">SousCategorieMarche</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Sous catégorie d'usage (exemple : collectif, deux pièces,…)</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3bhcQ0qSKHuO00025QrE$V">
+			<Name>RentalRatesInCategoryNow</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">PrixActuelLoyerParCategorie</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Prix actuel des loyers pour la catégorie considérée.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3sztC0qSKHuO00025QrE$V">
+			<Name>MarketSubCategoriesAvailableFuture</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DisponibilitesFuturesParSousCategories</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Liste de sous catégories disponibles dans le futur.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3Vk8M0qSKHuO00025QrE$V">
+			<Name>MarketSubCategoriesAvailableNow</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">DisponibilitesActuellesParSousCategories</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Liste de sous catégories actuellement disponibles</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3PAWu0qSKHuO00025QrE$V">
+			<Name>TenureModesAvailableNow</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">PossibilitesOccupationActuelles</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Liste des possibilités d'occupation actuelles.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+		<PropertyDef ifdguid="3$Jwu0qSKHuO00025QrE$V">
+			<Name>RentalRatesInCategoryFuture</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+			<NameAliases>
+				<NameAlias lang="fr-FR">PrixFuturLoyerParCategorie</NameAlias>
+			</NameAliases>
+			<DefinitionAliases>
+				<DefinitionAlias lang="fr-FR">Prix futur des loyers pour la catégorie considérée.</DefinitionAlias>
+			</DefinitionAliases>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

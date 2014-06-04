@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2HjtW0qUqHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_MaterialOptical</Name>
+	<Definition>A set of optical properties of materials.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcMaterial</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="2tH860qUqHuO00025QrE$V">
+			<Name>VisibleReflectanceBack</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2dBA80qUqHuO00025QrE$V">
+			<Name>ThermalIrEmissivityBack</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2zEcA0qUqHuO00025QrE$V">
+			<Name>VisibleReflectanceFront</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2iYUo0qUqHuO00025QrE$V">
+			<Name>ThermalIrEmissivityFront</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="33C4E0qUqHuO00025QrE$V">
+			<Name>SolarReflectanceBack</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2SSWq0qUqHuO00025QrE$V">
+			<Name>SolarTransmittance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="37zFU0qUqHuO00025QrE$V">
+			<Name>SolarReflectanceFront</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2XprU0qUqHuO00025QrE$V">
+			<Name>ThermalIrTransmittance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="2LIly0qUqHuO00025QrE$V">
+			<Name>VisibleTransmittance</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>

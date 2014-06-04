@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
+<PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3eO8e0qSmHuO00025QrE$V">
+	<IfcVersion version="2x4"/>
+	<Name>Pset_ConstructionResource</Name>
+	<Definition>Properties for tracking resource usage over time.</Definition>
+	<Applicability>null</Applicability>
+	<ApplicableClasses>
+		<ClassName>IfcConstructionResource</ClassName>
+	</ApplicableClasses>
+	<ApplicableTypeValue></ApplicableTypeValue>
+	<PropertyDefs>
+		<PropertyDef ifdguid="00qAI0qSqHuO00025QrE$V">
+			<Name>ActualCompletion</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3shgO0qSmHuO00025QrE$V">
+			<Name>ScheduleCost</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3xSre0qSmHuO00025QrE$V">
+			<Name>RemainingCost</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3_Rag0qSmHuO00025QrE$V">
+			<Name>ScheduleCompletion</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3nKLk0qSmHuO00025QrE$V">
+			<Name>ActualWork</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3kLci0qSmHuO00025QrE$V">
+			<Name>ScheduleWork</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3v4G00qSmHuO00025QrE$V">
+			<Name>ActualCost</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+		<PropertyDef ifdguid="3pixM0qSmHuO00025QrE$V">
+			<Name>RemainingWork</Name>
+			<PropertyType>
+			</PropertyType>
+			<Definition>null</Definition>
+		</PropertyDef>
+	</PropertyDefs>
+</PropertySetDef>
