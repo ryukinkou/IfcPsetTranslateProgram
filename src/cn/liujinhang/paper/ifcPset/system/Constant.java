@@ -16,5 +16,7 @@ public class Constant {
 
 	public static final String OUTPUT_IFC_OWL_FILE_PATH = System
 			.getProperty("user.dir") + "/ifcPset/ifcOWL_phase_3.owl";
+	
+	public static final String CACHE_FILE_DIR_PATH = System.getProperty("user.dir") + "/cache/";
 
 }
