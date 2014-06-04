@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-16" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
 <PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1wkrg0qTeHuO00025QrE$V">
@@ -88,9 +87,8 @@
 			<NameAliases>
 				<NameAlias lang="ja-JP">電気システムのカテゴリー</NameAlias>
 			</NameAliases>
-			<!-- 符号转义修正 -->
 			<DefinitionAliases>
-				<DefinitionAlias lang="ja-JP">IECに準拠した回路の電圧レンジを示す。次の列挙型の値を取る。(HIGHVOLTAGE indicates >1000V AC or >1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates &lt;50V AC or &lt;120V DC.)</DefinitionAlias>
+				<DefinitionAlias lang="ja-JP">IECに準拠した回路の電圧レンジを示す。次の列挙型の値を取る。(HIGHVOLTAGE indicates >1000V AC or >1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates <50V AC or <120V DC.)</DefinitionAlias>
 			</DefinitionAliases>
 		</PropertyDef>
 	</PropertyDefs>

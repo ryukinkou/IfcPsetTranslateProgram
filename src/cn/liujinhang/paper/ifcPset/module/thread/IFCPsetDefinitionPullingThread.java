@@ -3,20 +3,27 @@ package cn.liujinhang.paper.ifcPset.module.thread;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.Charset;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.SAXParserFactory;
+import javax.xml.transform.Source;
+import javax.xml.transform.sax.SAXSource;
 import javax.xml.validation.SchemaFactory;
 
+import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 
 import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
 import cn.liujinhang.paper.ifcPset.system.Constant;
+import cn.liujinhang.paper.ifcPset.system.GobalContext;
 
 public class IFCPsetDefinitionPullingThread extends BaseThread {
 
@@ -54,11 +61,11 @@ public class IFCPsetDefinitionPullingThread extends BaseThread {
 	}
 
 	@Override
-	public IFCPsetDefinitionPullingResult call() throws Exception {
+	public PropertySetDef call() throws Exception {
 
 		JAXBContext context = JAXBContext.newInstance(PropertySetDef.class);
-		Unmarshaller shaller = context.createUnmarshaller();
-		shaller.setSchema(SchemaFactory.newInstance(
+		Unmarshaller marshaller = context.createUnmarshaller();
+		marshaller.setSchema(SchemaFactory.newInstance(
 				XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(
 				new File(Constant.PSET_DEFINITION_FILE_PATH)));
 
@@ -66,43 +73,40 @@ public class IFCPsetDefinitionPullingThread extends BaseThread {
 		sax.setNamespaceAware(true);
 		XMLReader xmlReader = sax.newSAXParser().getXMLReader();
 
-		String url = Constant.BSDD_BASE_URL + "/IfdPSet/" + this.guid
-				+ "/ifcVersion/2x4/XML";
-
-		IFCPsetDefinitionPullingResult result = new IFCPsetDefinitionPullingResult();
+		InputStreamReader isr = null;
 
 		try {
 
-			System.out.println("Fetching : " + url);
-			String fileName = Constant.CACHE_FILE_DIR_PATH + this.guid + ".xml";
-			new File(fileName).delete();
-			this.saveAs(url, fileName);
-			System.out.println("Finish : " + url);
+			if (GobalContext.isReadFromLocal == true) {
 
-			// Source source = new SAXSource(xmlReader, new InputSource(
-			// new InputStreamReader(new URL(url).openStream(),
-			// Charset.forName("UTF-8"))));
+				String filePath = Constant.CACHE_FILE_DIR_PATH + this.guid
+						+ ".xml";
+				FileInputStream fis = new FileInputStream(filePath);
+				isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
 
-			// PropertySetDef propertySetDef = shaller.unmarshal(source,
-			// PropertySetDef.class).getValue();
+			} else {
 
-			// result.setGuid(guid);
-			// result.setPropertySetDef(propertySetDef);
-			// result.setSucceed(true);
+				String url = Constant.BSDD_BASE_URL + "/IfdPSet/" + this.guid
+						+ "/ifcVersion/2x4/XML";
+				isr = new InputStreamReader(new URL(url).openStream(),
+						Charset.forName("UTF-8"));
+			}
 
-			return result;
+			Source source = new SAXSource(xmlReader, new InputSource(isr));
+
+			PropertySetDef propertySetDef = marshaller.unmarshal(source,
+					PropertySetDef.class).getValue();
+
+			return propertySetDef;
 
 		} catch (Exception e) {
-
-			e.printStackTrace();
-
-			result.setGuid(guid);
-			result.setException(e);
-			result.setSucceed(false);
-
-			return result;
+			System.out.println(this.guid);
+			throw e;
+		} finally {
+			if (null != isr) {
+				isr.close();
+			}
 		}
 
 	}
-
 }

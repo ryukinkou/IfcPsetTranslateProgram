@@ -38,46 +38,37 @@ public class PsetDefinitionWriter {
 	public void lanuch() {
 
 		int capacity = 20;
-		int cached = 0;
+		int buffer = 0;
 
-		for (Future<IFCPsetDefinitionPullingResult> future : GobalContext.IFCPsetDefinitionPullingResults) {
+		for (Future<PropertySetDef> future : GobalContext.IFCPsetDefinitionPullingResults) {
+
+			PropertySetDef pSetDef = null;
 
 			try {
 
-				IFCPsetDefinitionPullingResult result = future.get();
+				pSetDef = future.get();
 
-				if (result.isSucceed() == true) {
+				this.write(pSetDef);
+				buffer++;
 
-					this.write(result.getPropertySetDef());
+				// temp saving
+				if (buffer >= capacity) {
 
-					cached++;
+					GobalContext.IFCOntology.write(new FileOutputStream(
+							new File(Constant.OUTPUT_IFC_OWL_FILE_PATH)),
+							"RDF/XML-ABBREV");
 
-					// temp saving
-					if (cached >= capacity) {
+					GobalContext.IFCOntology.close();
 
-						GobalContext.IFCOntology.write(new FileOutputStream(
-								new File(Constant.OUTPUT_IFC_OWL_FILE_PATH)),
-								"RDF/XML-ABBREV");
+					GobalContext.IFCOntology = ModelFactory
+							.createOntologyModel();
+					GobalContext.IFCOntology
+							.read(Constant.OUTPUT_IFC_OWL_FILE_PATH);
 
-						GobalContext.IFCOntology.close();
-
-						GobalContext.IFCOntology = ModelFactory
-								.createOntologyModel();
-						GobalContext.IFCOntology
-								.read(Constant.OUTPUT_IFC_OWL_FILE_PATH);
-
-						cached = 0;
-
-					}
-
-				} else if (result.isSucceed() == false) {
-
+					buffer = 0;
 				}
 
 			} catch (Exception e) {
-
-				e.printStackTrace();
-
 			}
 
 		}
@@ -102,15 +93,17 @@ public class PsetDefinitionWriter {
 				GobalContext.IFCOntology.createLiteral(pSetDef.getIfdguid(),
 						"en"));
 
-		pSetClazz.setLabel(pSetDef.getName(), "ifc "
+		pSetClazz.setLabel(pSetDef.getName(), "IFC "
 				+ pSetDef.getIfcVersion().getVersion());
 
-		System.out.println("-----------------------------------------");
-		System.out.println(pSetDef.getApplicableTypeValue());
-		System.out.println(pSetDef.getApplicability());
-		System.out.println(pSetDef.getApplicableClasses().getClassName()
-				.toString());
-		System.out.println("-----------------------------------------");
+		// System.out.println("-----------------------------------------");
+		// System.out.println(pSetDef.getApplicableTypeValue());
+		// System.out.println(pSetDef.getApplicability());
+		// System.out.println(pSetDef.getApplicableClasses().getClassName()
+		// .toString());
+		// System.out.println("-----------------------------------------");
+		
+		System.out.println(pSetDef.getApplicableClasses().getClassName().toString());
 
 		for (PropertyDef propertyDef : pSetDef.getPropertyDefs()
 				.getPropertyDef()) {
@@ -166,9 +159,9 @@ public class PsetDefinitionWriter {
 						.createObjectProperty(ToolKit
 								.getObjectPredicate(propertyName));
 
-//				type = GobalContext.IFCOntology.createClass(ToolKit
-//						.getFullName(propertyType));
-				
+				// type = GobalContext.IFCOntology.createClass(ToolKit
+				// .getFullName(propertyType));
+
 				type = GobalContext.IFCOntology.getOntClass(ToolKit
 						.getFullName(propertyType));
 
