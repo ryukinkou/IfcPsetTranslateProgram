@@ -9,10 +9,10 @@ import java.util.concurrent.Future;
 import javax.xml.bind.JAXBElement;
 
 import cn.liujinhang.paper.ifcPset.entity.PropertyDef;
-import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
-import cn.liujinhang.paper.ifcPset.entity.PropertyType;
 import cn.liujinhang.paper.ifcPset.entity.PropertyDef.DefinitionAliases.DefinitionAlias;
 import cn.liujinhang.paper.ifcPset.entity.PropertyDef.NameAliases.NameAlias;
+import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
+import cn.liujinhang.paper.ifcPset.entity.PropertyType;
 import cn.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
 import cn.liujinhang.paper.ifcPset.system.Constant;
 import cn.liujinhang.paper.ifcPset.system.CustomAnnotationProperty;
@@ -23,7 +23,6 @@ import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.ontology.AllValuesFromRestriction;
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntProperty;
-import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 
@@ -154,11 +153,9 @@ public class PsetDefinitionWriter {
 				// deprecated by ifc standard.
 				if (element.getDeclaredType()
 						.equals(PropertyDef.ValueDef.class)) {
-
 					@SuppressWarnings("unused")
 					PropertyDef.ValueDef valueDef = (PropertyDef.ValueDef) element
 							.getValue();
-
 				}
 
 			}
@@ -169,7 +166,10 @@ public class PsetDefinitionWriter {
 						.createObjectProperty(ToolKit
 								.getObjectPredicate(propertyName));
 
-				type = GobalContext.IFCOntology.createClass(ToolKit
+//				type = GobalContext.IFCOntology.createClass(ToolKit
+//						.getFullName(propertyType));
+				
+				type = GobalContext.IFCOntology.getOntClass(ToolKit
 						.getFullName(propertyType));
 
 			} else {

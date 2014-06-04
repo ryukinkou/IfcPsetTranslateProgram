@@ -13,7 +13,7 @@ public class PsetDefinitionReader {
 	private ExecutorService threadPool;
 
 	public PsetDefinitionReader() {
-		threadPool = Executors.newFixedThreadPool(10);
+		threadPool = Executors.newFixedThreadPool(1);
 	}
 
 	@SuppressWarnings("unchecked")

@@ -50,10 +50,15 @@ public class IFCPsetDefinitionPullingThread extends BaseThread {
 		IFCPsetDefinitionPullingResult result = new IFCPsetDefinitionPullingResult();
 
 		try {
+			
+			System.out.println(url);
+			
 			Source source = new SAXSource(xmlReader, new InputSource(
 					new InputStreamReader(new URL(url).openStream(),
 							Charset.forName("UTF-8"))));
 
+			System.out.println("aaaaaa");
+			
 			PropertySetDef propertySetDef = shaller.unmarshal(source,
 					PropertySetDef.class).getValue();
 
@@ -65,6 +70,8 @@ public class IFCPsetDefinitionPullingThread extends BaseThread {
 
 		} catch (Exception e) {
 
+			e.printStackTrace();
+			
 			result.setGuid(guid);
 			result.setException(e);
 			result.setSucceed(false);
