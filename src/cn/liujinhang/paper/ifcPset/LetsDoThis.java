@@ -6,7 +6,7 @@ import java.util.concurrent.Future;
 import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
 import cn.liujinhang.paper.ifcPset.module.PsetDefGUIDSnatcher;
 import cn.liujinhang.paper.ifcPset.module.PsetDefSnatcher;
-import cn.liujinhang.paper.ifcPset.module.PsetOntologyGenerator;
+import cn.liujinhang.paper.ifcPset.module.PsetDefOntologyGenerator;
 
 public class LetsDoThis {
 
@@ -17,7 +17,7 @@ public class LetsDoThis {
 		List<Future<PropertySetDef>> futures = new PsetDefSnatcher(pSetGUID)
 				.lanuch();
 
-		new PsetOntologyGenerator(futures).lanuch();
+		new PsetDefOntologyGenerator(futures).lanuch();
 
 	}
 }

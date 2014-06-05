@@ -23,12 +23,13 @@ import cn.liujinhang.paper.ifcPset.system.ToolKit;
 
 import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
 import com.hp.hpl.jena.ontology.AllValuesFromRestriction;
+import com.hp.hpl.jena.ontology.ObjectProperty;
 import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntProperty;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 
-public class PsetOntologyGenerator {
+public class PsetDefOntologyGenerator {
 
 	private int capacity;
 
@@ -38,7 +39,7 @@ public class PsetOntologyGenerator {
 
 	private List<Future<PropertySetDef>> futures;
 
-	public PsetOntologyGenerator(List<Future<PropertySetDef>> futures) {
+	public PsetDefOntologyGenerator(List<Future<PropertySetDef>> futures) {
 
 		this.futures = futures;
 
@@ -47,78 +48,19 @@ public class PsetOntologyGenerator {
 
 		relations = new HashMap<String, List<String>>();
 
-		this.loadOntology();
-		GobalContext.IFCOntologyNamespace = GobalContext.IFCOntology
-				.getNsPrefixMap().get("base");
-
-	}
-
-	private void loadOntology() {
 		GobalContext.IFCOntology = ModelFactory.createOntologyModel();
 		GobalContext.IFCOntology.read(Constant.INPUT_IFC_OWL_FILE_PATH);
-	}
-
-	private void saveOntology() {
-		try {
-			if (null != GobalContext.IFCOntology
-					&& !GobalContext.IFCOntology.isEmpty()
-					&& !GobalContext.IFCOntology.isClosed()) {
-				GobalContext.IFCOntology.write(new FileOutputStream(new File(
-						Constant.OUTPUT_IFC_OWL_FILE_PATH)), "RDF/XML-ABBREV");
-
-				GobalContext.IFCOntology.close();
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void queryPredicateLogic(PropertySetDef pSetDef) {
-
-		List<String> relation = null;
-		for (String className : pSetDef.getApplicableClasses().getClassName()) {
-
-			String pureClassName = className.split("/")[0];
-
-			if (this.relations.containsKey(pureClassName)) {
-				relation = this.relations.get(pureClassName);
-			} else {
-				relation = new ArrayList<String>();
-				this.relations.put(pureClassName, relation);
-			}
-
-			relation.add(pSetDef.getName());
-
-		}
-
-	}
-
-	public void generatePredicateLogic() {
-
-		for (String key : this.relations.keySet()) {
-
-			System.out.println("----------");
-			System.out.println(" class : " + key);
-
-			for (String predicate : this.relations.get(key)) {
-
-				System.out.println(" " + predicate);
-
-			}
-
-		}
+		GobalContext.IFCOntologyNamespace = GobalContext.IFCOntology
+				.getNsPrefixMap().get("base");
 
 	}
 
 	public void lanuch() {
 
 		for (Future<PropertySetDef> future : this.futures) {
-
-			PropertySetDef pSetDef = null;
-
 			try {
 
-				pSetDef = future.get();
+				PropertySetDef pSetDef = future.get();
 
 				this.queryPredicateLogic(pSetDef);
 				this.generateClassDefinition(pSetDef);
@@ -126,8 +68,8 @@ public class PsetOntologyGenerator {
 				this.buffer++;
 				if (this.buffer >= this.capacity) {
 
-					this.saveOntology();
-					this.loadOntology();
+					this.saveCurrentOntology();
+					this.loadCurrentOntology();
 
 					this.buffer = 0;
 				}
@@ -136,15 +78,35 @@ public class PsetOntologyGenerator {
 			}
 
 		}
-		this.saveOntology();
+		this.saveCurrentOntology();
 
-		this.generatePredicateLogic();
+		this.buffer = 0;
+		this.loadCurrentOntology();
+		for (String className : this.relations.keySet()) {
 
-		//this.saveOntology();
+			try {
+
+				this.generatePredicateLogic(className);
+
+				this.buffer++;
+
+				if (this.buffer >= this.capacity) {
+
+					this.saveCurrentOntology();
+					this.loadCurrentOntology();
+
+					this.buffer = 0;
+				}
+
+			} catch (Exception e) {
+			}
+
+		}
+		this.saveCurrentOntology();
 
 	}
 
-	public void generateClassDefinition(PropertySetDef pSetDef) {
+	private void generateClassDefinition(PropertySetDef pSetDef) {
 
 		OntClass pSetClazz = GobalContext.IFCOntology.createClass(ToolKit
 				.getFullName(pSetDef.getName()));
@@ -257,6 +219,7 @@ public class PsetOntologyGenerator {
 		}
 
 	}
+	
 
 	@SuppressWarnings("rawtypes")
 	private String getNonEmptyFieldSimpleName(PropertyType type) {
@@ -277,4 +240,66 @@ public class PsetOntologyGenerator {
 		return simpleName;
 
 	}
+	
+
+	private void loadCurrentOntology() {
+		GobalContext.IFCOntology = ModelFactory.createOntologyModel();
+		GobalContext.IFCOntology.read(Constant.OUTPUT_IFC_OWL_FILE_PATH);
+	}
+
+	private void saveCurrentOntology() {
+		try {
+			if (null != GobalContext.IFCOntology
+					&& GobalContext.IFCOntology.isClosed() == false) {
+				GobalContext.IFCOntology.write(new FileOutputStream(new File(
+						Constant.OUTPUT_IFC_OWL_FILE_PATH)), "RDF/XML-ABBREV");
+				GobalContext.IFCOntology.close();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void queryPredicateLogic(PropertySetDef pSetDef) {
+
+		List<String> relation = null;
+		for (String className : pSetDef.getApplicableClasses().getClassName()) {
+
+			String pureClassName = className.split("/")[0];
+
+			if (this.relations.containsKey(pureClassName)) {
+				relation = this.relations.get(pureClassName);
+			} else {
+				relation = new ArrayList<String>();
+				this.relations.put(pureClassName, relation);
+			}
+
+			relation.add(pSetDef.getName());
+
+		}
+
+	}
+
+	private void generatePredicateLogic(String className) {
+
+		OntClass clazz = GobalContext.IFCOntology.getOntClass(ToolKit
+				.getFullName(className));
+
+		for (String predicate : this.relations.get(className)) {
+
+			ObjectProperty property = GobalContext.IFCOntology
+					.createObjectProperty(ToolKit.getObjectPredicate(predicate));
+
+			Resource type = GobalContext.IFCOntology.getOntClass(ToolKit
+					.getFullName(predicate));
+
+			AllValuesFromRestriction avf = GobalContext.IFCOntology
+					.createAllValuesFromRestriction(null, property, type);
+
+			clazz.addSuperClass(avf);
+
+		}
+
+	}
+
 }
