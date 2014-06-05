@@ -24,7 +24,7 @@ import cn.liujinhang.paper.ifcPset.system.GobalContext;
 
 public class PsetDefGUIDSnatcher {
 
-	public List<String> lanuch() {
+	public List<String> launch() {
 
 		return this.snatchFromIFDLibrary();
 

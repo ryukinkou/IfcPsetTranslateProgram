@@ -12,12 +12,12 @@ public class LetsDoThis {
 
 	public static void main(String[] args) {
 
-		List<String> pSetGUID = new PsetDefGUIDSnatcher().lanuch();
+		List<String> pSetGUID = new PsetDefGUIDSnatcher().launch();
 
 		List<Future<PropertySetDef>> futures = new PsetDefSnatcher(pSetGUID)
-				.lanuch();
+				.launch();
 
-		new PsetDefOntologyGenerator(futures).lanuch();
+		new PsetDefOntologyGenerator(futures).launch();
 
 	}
 }

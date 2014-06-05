@@ -55,7 +55,7 @@ public class PsetDefOntologyGenerator {
 
 	}
 
-	public void lanuch() {
+	public void launch() {
 
 		for (Future<PropertySetDef> future : this.futures) {
 			try {

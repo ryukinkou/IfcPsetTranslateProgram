@@ -21,7 +21,7 @@ public class PsetDefSnatcher {
 	}
 
 	@SuppressWarnings("unchecked")
-	public List<Future<PropertySetDef>> lanuch() {
+	public List<Future<PropertySetDef>> launch() {
 
 		List<Future<PropertySetDef>> futures = null;
 
