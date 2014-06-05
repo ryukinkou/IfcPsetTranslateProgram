@@ -1,18 +1,23 @@
 package cn.liujinhang.paper.ifcPset;
 
-import cn.liujinhang.paper.ifcPset.module.PsetDefinitionPuller;
-import cn.liujinhang.paper.ifcPset.module.PsetDefinitionReader;
-import cn.liujinhang.paper.ifcPset.module.PsetDefinitionWriter;
+import java.util.List;
+import java.util.concurrent.Future;
+
+import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
+import cn.liujinhang.paper.ifcPset.module.PsetDefGUIDSnatcher;
+import cn.liujinhang.paper.ifcPset.module.PsetDefSnatcher;
+import cn.liujinhang.paper.ifcPset.module.PsetOntologyGenerator;
 
 public class LetsDoThis {
 
 	public static void main(String[] args) {
 
-		new PsetDefinitionPuller().pullFromIFDLibrary();
+		List<String> pSetGUID = new PsetDefGUIDSnatcher().lanuch();
 
-		new PsetDefinitionReader().read();
+		List<Future<PropertySetDef>> futures = new PsetDefSnatcher(pSetGUID)
+				.lanuch();
 
-		new PsetDefinitionWriter().lanuch();
+		new PsetOntologyGenerator(futures).lanuch();
 
 	}
 }

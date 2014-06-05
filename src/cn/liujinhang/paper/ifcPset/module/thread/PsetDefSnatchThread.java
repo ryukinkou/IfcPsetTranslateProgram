@@ -1,12 +1,9 @@
 package cn.liujinhang.paper.ifcPset.module.thread;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.Charset;
 
@@ -25,7 +22,7 @@ import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
 import cn.liujinhang.paper.ifcPset.system.Constant;
 import cn.liujinhang.paper.ifcPset.system.GobalContext;
 
-public class IFCPsetDefinitionPullingThread extends BaseThread {
+public class PsetDefSnatchThread extends BaseThread {
 
 	private String guid;
 
@@ -37,49 +34,27 @@ public class IFCPsetDefinitionPullingThread extends BaseThread {
 		this.guid = guid;
 	}
 
-	public boolean saveAs(String strUrl, String fileName) {
-		try {
-			URL url = new URL(strUrl);
-			HttpURLConnection connection = (HttpURLConnection) url
-					.openConnection();
-			DataInputStream in = new DataInputStream(
-					connection.getInputStream());
-			DataOutputStream out = new DataOutputStream(new FileOutputStream(
-					fileName));
-			byte[] buffer = new byte[4096];
-			int count = 0;
-			while ((count = in.read(buffer)) > 0) {
-				out.write(buffer, 0, count);
-			}
-			out.close();
-			in.close();
-			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
-		}
-	}
-
 	@Override
 	public PropertySetDef call() throws Exception {
-
-		JAXBContext context = JAXBContext.newInstance(PropertySetDef.class);
-		Unmarshaller marshaller = context.createUnmarshaller();
-		marshaller.setSchema(SchemaFactory.newInstance(
-				XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(
-				new File(Constant.PSET_DEFINITION_FILE_PATH)));
-
-		SAXParserFactory sax = SAXParserFactory.newInstance();
-		sax.setNamespaceAware(true);
-		XMLReader xmlReader = sax.newSAXParser().getXMLReader();
 
 		InputStreamReader isr = null;
 
 		try {
 
-			if (GobalContext.isReadFromLocal == true) {
+			JAXBContext context = JAXBContext.newInstance(PropertySetDef.class);
+			Unmarshaller marshaller = context.createUnmarshaller();
 
-				String filePath = Constant.CACHE_FILE_DIR_PATH + this.guid
+			marshaller.setSchema(SchemaFactory.newInstance(
+					XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(
+					new File(Constant.PSET_DEFINITION_FILE_PATH)));
+
+			SAXParserFactory sax = SAXParserFactory.newInstance();
+			sax.setNamespaceAware(true);
+			XMLReader xmlReader = sax.newSAXParser().getXMLReader();
+
+			if (GobalContext.isReadFromLocalCache == true) {
+
+				String filePath = Constant.CACHED_FILE_DIR_PATH + this.guid
 						+ ".xml";
 				FileInputStream fis = new FileInputStream(filePath);
 				isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
@@ -99,8 +74,8 @@ public class IFCPsetDefinitionPullingThread extends BaseThread {
 
 			return propertySetDef;
 
-		} catch (Exception e) {
-			System.out.println(this.guid);
+		} catch (FileNotFoundException e) {
+			System.out.println("not found : " + this.guid);
 			throw e;
 		} finally {
 			if (null != isr) {

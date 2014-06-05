@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-16" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="/templates/PSD_IFC4.xsl"?>
 <PropertySetDef xsi:schemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2Y_8Y0qTqHuO00025QrE$V">
@@ -40,9 +39,10 @@
 				<NameAlias lang="zh-CN">折减系数</NameAlias>
 			</NameAliases>
 			<DefinitionAliases>
+				<!-- 符号转义修正 -->
 				<DefinitionAlias lang="fr-FR">Réduction du coefficient de transmission énergétique solaire (Valeur-G), valeur SHGC (égale à la Valeur-G en Europe) du vitrage par application d'un pare-soleil. Communément appelé Fc (ou précédemment Valeur-z). Coefficient de transmission du rayonnement total g&lt;total&gt; = g * Fc. Le coefficient de réduction est donné en tant que valeur sans unité comprise entre 0 et 1 ; plus la valeur de SC est petite, plus faible est la transmission d'énergie solaire. Également désigné "Coefficient de Réduction".</DefinitionAlias>
 				<DefinitionAlias lang="zh-CN">采用遮阳设备后玻璃的太阳能得热系数（SHGC值，在欧洲等于g值）的折减，又称为Fc（或z值）。总辐射透射率
-g<total> = g*Fc。
+g&lt;total&gt; = g*Fc。
 折减系数为一个大于0小于1的无单位数，该值越小表示传递的太阳热量越小。</DefinitionAlias>
 			</DefinitionAliases>
 		</PropertyDef>

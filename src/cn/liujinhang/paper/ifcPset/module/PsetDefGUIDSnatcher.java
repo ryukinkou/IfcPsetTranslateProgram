@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.htmlparser.Node;
 import org.htmlparser.NodeFilter;
@@ -20,11 +22,21 @@ import org.htmlparser.util.NodeList;
 import cn.liujinhang.paper.ifcPset.system.Constant;
 import cn.liujinhang.paper.ifcPset.system.GobalContext;
 
-public class PsetDefinitionPuller {
+public class PsetDefGUIDSnatcher {
 
-	public void pullFromIFCDocument() {
+	public List<String> lanuch() {
+
+		return this.snatchFromIFDLibrary();
+
+	}
+
+	public List<String> snatchFromIFCDocument() {
+
+		List<String> pSetDefFileLocation = null;
 
 		try {
+
+			pSetDefFileLocation = new ArrayList<String>();
 
 			URL indexPage = new URL(Constant.PSET_FILE_DIR_URL);
 			Parser parser = new Parser(
@@ -46,7 +58,7 @@ public class PsetDefinitionPuller {
 					if (link.indexOf(Constant.PSET_FILE_DIR_URL) != -1
 							&& link.indexOf(".xml") != -1) {
 
-						GobalContext.PsetFileLocation.add(link);
+						pSetDefFileLocation.add(link);
 
 					}
 
@@ -58,32 +70,39 @@ public class PsetDefinitionPuller {
 			e.printStackTrace();
 		}
 
+		return pSetDefFileLocation;
+
 	}
 
-	public void pullFromIFDLibrary() {
+	public List<String> snatchFromIFDLibrary() {
+
+		Parser parser = null;
+		List<String> pSetDefGUID = null;
 
 		try {
 
-			// URL sourcePage = new URL(Constant.PSET_BROWSE_VIEW_URL);
-			//
-			// Parser parser = new Parser(
-			// (HttpURLConnection) (sourcePage.openConnection()));
+			pSetDefGUID = new ArrayList<String>();
 
-			// load file from local start
-			StringBuffer content = new StringBuffer();
-			BufferedReader reader = new BufferedReader(
-					new FileReader(
-							new File(
-									"/Users/RYU/git/IfcPsetTranslateProgram/ifcPset/BrowseView.html")));
-			String strLine = "";
-			while ((strLine = reader.readLine()) != null) {
-				content.append(strLine);
-				content.append("\r\n");
+			if (GobalContext.isReadFromLocalCache == true) {
+
+				StringBuffer content = new StringBuffer();
+				BufferedReader reader = new BufferedReader(new FileReader(
+						new File(Constant.CACHED_BROWSE_VIEW_FILE_PATH)));
+
+				String strLine = "";
+				while ((strLine = reader.readLine()) != null) {
+					content.append(strLine);
+					content.append("\r\n");
+				}
+				reader.close();
+
+				parser = Parser.createParser(content.toString(), "UTF-8");
+
+			} else {
+				URL sourcePage = new URL(Constant.PSET_BROWSE_VIEW_URL);
+				parser = new Parser(
+						(HttpURLConnection) (sourcePage.openConnection()));
 			}
-			reader.close();
-
-			Parser parser = Parser.createParser(content.toString(), "UTF-8");
-			// load file from local end
 
 			NodeFilter filter = new AndFilter(new TagNameFilter("tr"),
 					new HasAttributeFilter("data-guid"));
@@ -104,8 +123,7 @@ public class PsetDefinitionPuller {
 
 						if (divPset.getAttribute("id").equals("collapseFour")) {
 
-							GobalContext.PsetGuid.add(trPset
-									.getAttribute("data-guid"));
+							pSetDefGUID.add(trPset.getAttribute("data-guid"));
 
 						}
 
@@ -118,6 +136,8 @@ public class PsetDefinitionPuller {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		return pSetDefGUID;
 
 	}
 }

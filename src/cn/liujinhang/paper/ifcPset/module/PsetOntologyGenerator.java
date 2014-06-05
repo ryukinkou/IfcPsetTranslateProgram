@@ -1,9 +1,12 @@
 package cn.liujinhang.paper.ifcPset.module;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Future;
 
 import javax.xml.bind.JAXBElement;
@@ -13,7 +16,6 @@ import cn.liujinhang.paper.ifcPset.entity.PropertyDef.DefinitionAliases.Definiti
 import cn.liujinhang.paper.ifcPset.entity.PropertyDef.NameAliases.NameAlias;
 import cn.liujinhang.paper.ifcPset.entity.PropertySetDef;
 import cn.liujinhang.paper.ifcPset.entity.PropertyType;
-import cn.liujinhang.paper.ifcPset.module.thread.IFCPsetDefinitionPullingResult;
 import cn.liujinhang.paper.ifcPset.system.Constant;
 import cn.liujinhang.paper.ifcPset.system.CustomAnnotationProperty;
 import cn.liujinhang.paper.ifcPset.system.GobalContext;
@@ -26,21 +28,91 @@ import com.hp.hpl.jena.ontology.OntProperty;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 
-public class PsetDefinitionWriter {
+public class PsetOntologyGenerator {
 
-	public PsetDefinitionWriter() {
-		GobalContext.IFCOntology = ModelFactory.createOntologyModel();
-		GobalContext.IFCOntology.read(Constant.INPUT_IFC_OWL_FILE_PATH);
+	private int capacity;
+
+	private int buffer;
+
+	private Map<String, List<String>> relations;
+
+	private List<Future<PropertySetDef>> futures;
+
+	public PsetOntologyGenerator(List<Future<PropertySetDef>> futures) {
+
+		this.futures = futures;
+
+		this.capacity = 20;
+		this.buffer = 0;
+
+		relations = new HashMap<String, List<String>>();
+
+		this.loadOntology();
 		GobalContext.IFCOntologyNamespace = GobalContext.IFCOntology
 				.getNsPrefixMap().get("base");
+
+	}
+
+	private void loadOntology() {
+		GobalContext.IFCOntology = ModelFactory.createOntologyModel();
+		GobalContext.IFCOntology.read(Constant.INPUT_IFC_OWL_FILE_PATH);
+	}
+
+	private void saveOntology() {
+		try {
+			if (null != GobalContext.IFCOntology
+					&& !GobalContext.IFCOntology.isEmpty()
+					&& !GobalContext.IFCOntology.isClosed()) {
+				GobalContext.IFCOntology.write(new FileOutputStream(new File(
+						Constant.OUTPUT_IFC_OWL_FILE_PATH)), "RDF/XML-ABBREV");
+
+				GobalContext.IFCOntology.close();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void queryPredicateLogic(PropertySetDef pSetDef) {
+
+		List<String> relation = null;
+		for (String className : pSetDef.getApplicableClasses().getClassName()) {
+
+			String pureClassName = className.split("/")[0];
+
+			if (this.relations.containsKey(pureClassName)) {
+				relation = this.relations.get(pureClassName);
+			} else {
+				relation = new ArrayList<String>();
+				this.relations.put(pureClassName, relation);
+			}
+
+			relation.add(pSetDef.getName());
+
+		}
+
+	}
+
+	public void generatePredicateLogic() {
+
+		for (String key : this.relations.keySet()) {
+
+			System.out.println("----------");
+			System.out.println(" class : " + key);
+
+			for (String predicate : this.relations.get(key)) {
+
+				System.out.println(" " + predicate);
+
+			}
+
+		}
+
 	}
 
 	public void lanuch() {
 
-		int capacity = 20;
-		int buffer = 0;
-
-		for (Future<PropertySetDef> future : GobalContext.IFCPsetDefinitionPullingResults) {
+		for (Future<PropertySetDef> future : this.futures) {
 
 			PropertySetDef pSetDef = null;
 
@@ -48,43 +120,31 @@ public class PsetDefinitionWriter {
 
 				pSetDef = future.get();
 
-				this.write(pSetDef);
-				buffer++;
+				this.queryPredicateLogic(pSetDef);
+				this.generateClassDefinition(pSetDef);
 
-				// temp saving
-				if (buffer >= capacity) {
+				this.buffer++;
+				if (this.buffer >= this.capacity) {
 
-					GobalContext.IFCOntology.write(new FileOutputStream(
-							new File(Constant.OUTPUT_IFC_OWL_FILE_PATH)),
-							"RDF/XML-ABBREV");
+					this.saveOntology();
+					this.loadOntology();
 
-					GobalContext.IFCOntology.close();
-
-					GobalContext.IFCOntology = ModelFactory
-							.createOntologyModel();
-					GobalContext.IFCOntology
-							.read(Constant.OUTPUT_IFC_OWL_FILE_PATH);
-
-					buffer = 0;
+					this.buffer = 0;
 				}
 
 			} catch (Exception e) {
 			}
 
 		}
+		this.saveOntology();
 
-		try {
+		this.generatePredicateLogic();
 
-			GobalContext.IFCOntology.write(new FileOutputStream(new File(
-					Constant.OUTPUT_IFC_OWL_FILE_PATH)), "RDF/XML-ABBREV");
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+		//this.saveOntology();
 
 	}
 
-	public void write(PropertySetDef pSetDef) {
+	public void generateClassDefinition(PropertySetDef pSetDef) {
 
 		OntClass pSetClazz = GobalContext.IFCOntology.createClass(ToolKit
 				.getFullName(pSetDef.getName()));
@@ -95,15 +155,6 @@ public class PsetDefinitionWriter {
 
 		pSetClazz.setLabel(pSetDef.getName(), "IFC "
 				+ pSetDef.getIfcVersion().getVersion());
-
-		// System.out.println("-----------------------------------------");
-		// System.out.println(pSetDef.getApplicableTypeValue());
-		// System.out.println(pSetDef.getApplicability());
-		// System.out.println(pSetDef.getApplicableClasses().getClassName()
-		// .toString());
-		// System.out.println("-----------------------------------------");
-		
-		System.out.println(pSetDef.getApplicableClasses().getClassName().toString());
 
 		for (PropertyDef propertyDef : pSetDef.getPropertyDefs()
 				.getPropertyDef()) {
@@ -143,7 +194,7 @@ public class PsetDefinitionWriter {
 							.getValue();
 				}
 
-				// deprecated by ifc standard.
+				// deprecated by IFC standard.
 				if (element.getDeclaredType()
 						.equals(PropertyDef.ValueDef.class)) {
 					@SuppressWarnings("unused")
@@ -158,9 +209,6 @@ public class PsetDefinitionWriter {
 				property = GobalContext.IFCOntology
 						.createObjectProperty(ToolKit
 								.getObjectPredicate(propertyName));
-
-				// type = GobalContext.IFCOntology.createClass(ToolKit
-				// .getFullName(propertyType));
 
 				type = GobalContext.IFCOntology.getOntClass(ToolKit
 						.getFullName(propertyType));
@@ -211,7 +259,7 @@ public class PsetDefinitionWriter {
 	}
 
 	@SuppressWarnings("rawtypes")
-	public String getNonEmptyFieldSimpleName(PropertyType type) {
+	private String getNonEmptyFieldSimpleName(PropertyType type) {
 		String simpleName = null;
 		Class clazz = (Class) type.getClass();
 		for (Field field : clazz.getDeclaredFields()) {
